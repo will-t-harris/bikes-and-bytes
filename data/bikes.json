@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Krampus",
+    "slug": "krampus",
+    "description": "<p>Surly Krampus</p>",
+    "image": "./images/krampus.jpg"
+  },
+  {
+    "title": "Long Haul Trucker",
+    "slug": "lht",
+    "description": "<p>Surly Long Haul Trucker</p>",
+    "image": "./images/long-haul-trucker.jpg"
+  }
+]
