@@ -10,5 +10,11 @@
     "slug": "lht",
     "description": "<p>Surly Long Haul Trucker</p>",
     "image": "./images/long-haul-trucker.jpg"
+  },
+  {
+    "title": "Kona Unit",
+    "slug": "unit",
+    "description": "<p>Kona Unit singlespeed</p>",
+    "image": "./images/kona-unit.jpg"
   }
 ]
