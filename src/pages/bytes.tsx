@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const AboutPage = () => (
+const BytesPage = () => (
   <main>
-    <h1>About Me</h1>
-    <p>Welcome to the about page</p>
+    <h1>Bytes</h1>
+    <p>Welcome to the Bytes page</p>
     <Link to="/">Go back to the homepage</Link>
   </main>
 )
 
-export default AboutPage
+export default BytesPage
