@@ -16,9 +16,6 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
