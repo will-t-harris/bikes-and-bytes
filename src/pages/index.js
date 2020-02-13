@@ -1,12 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+
     <Link className="mr-6 font-bold" to="/page-2/">
       Go to page 2
     </Link>
