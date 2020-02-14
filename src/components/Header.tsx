@@ -6,7 +6,7 @@ import React from "react"
 const Header = ({ siteTitle }) => {
   return (
     <header>
-      <div className="flex items-center justify-between bg-gray-600">
+      <div className="flex items-center bg-gray-600">
         <svg
           className="fill-current ml-6"
           width="96"
@@ -40,8 +40,9 @@ const Header = ({ siteTitle }) => {
             fill="black"
           />
         </svg>
-
-        <h1 className="text-4xl ml-auto mr-6 my-4 font-bold">Bikes & Bytes</h1>
+        <Link to="/" className="ml-auto flex self-end flex-row mr-6">
+          <h1 className="text-4xl my-4 font-bold">Bikes & Bytes</h1>
+        </Link>
       </div>
     </header>
   )
