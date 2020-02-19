@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "autoprefixer": "^9.7.4",
     "core-js": "^3",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.40",
@@ -31,7 +32,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run tailwind:css && gatsby build",
-    "develop": "npm run tailwind:css && gatsby develop",
+    "dev": "npm run tailwind:css && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run tailwind:css && npm run develop",
     "serve": "gatsby serve",
