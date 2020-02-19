@@ -9,6 +9,9 @@ const BikesPage = () => (
     <main>
       <h1>Bikes</h1>
       <p>Welcome to the bikes page</p>
+      <Link to="/bike/lht">LHT</Link>
+      <Link to="/bike/krampus">Krampus</Link>
+      <Link to="/bike/unit">Unit</Link>
       <Link to="/">Go back to the homepage</Link>
     </main>
   </Layout>
