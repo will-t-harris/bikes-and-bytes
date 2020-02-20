@@ -6,18 +6,16 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./data/`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-sharp`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
   ],
 }
