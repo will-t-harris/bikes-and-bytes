@@ -40,7 +40,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 }
 
 exports.createPages = ({ actions: { createPage }, graphql }) => {
-  const postTemplate = path.resolve("src/templates/post.tsx")
+  const postTemplate = path.resolve("./src/templates/post.tsx")
 
   return graphql(`
     {
