@@ -1,20 +1,20 @@
 [
   {
-    "title": "Krampus",
+    "title": "2018 Krampus",
     "slug": "krampus",
-    "description": "<p>Surly Krampus</p>",
+    "description": "2018 Surly Krampus",
     "image": "./images/krampus.jpg"
   },
   {
-    "title": "Long Haul Trucker",
+    "title": "2012 Long Haul Trucker",
     "slug": "lht",
-    "description": "<p>Surly Long Haul Trucker</p>",
+    "description": "2012 Surly Long Haul Trucker",
     "image": "./images/long-haul-trucker.jpg"
   },
   {
-    "title": "Kona Unit",
+    "title": "2015 Kona Unit",
     "slug": "unit",
-    "description": "<p>Kona Unit singlespeed</p>",
+    "description": "2015 Kona Unit singlespeed",
     "image": "./images/kona-unit.jpg"
   }
 ]
