@@ -7,6 +7,7 @@ const Post = ({ data }) => {
   return (
     <div>
       <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <Link to="/bytes" style={{ display: "block" }}>
         Back to blog posts
       </Link>
