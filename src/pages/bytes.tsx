@@ -12,7 +12,7 @@ const BytesPage = ({ data }) => (
       <h2>Index</h2>
       {data.allMarkdownRemark.edges.map(post => (
         <Link
-          key={post.node.frontmatter.id}
+          key={post.node.id}
           to={post.node.frontmatter.path}
           style={{ display: "block" }}
         >
