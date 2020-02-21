@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import HeaderButton from "./HeaderButton"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -27,7 +28,7 @@ const Header = ({ siteTitle }) => {
           </defs>
         </svg>
         <svg
-          className="fill-current ml-6"
+          className="fill-current mx-6"
           width="64"
           height="64"
           viewBox="0 0 64 64"
@@ -39,8 +40,29 @@ const Header = ({ siteTitle }) => {
             fill="black"
           />
         </svg>
-        <Link to="/" className="ml-auto flex self-end flex-row mr-6">
-          <h1 className="text-4xl my-4 font-bold">Bikes & Bytes</h1>
+        <HeaderButton
+          buttonTitle="Bytes"
+          buttonSlug="bytes"
+          buttonClass="btn"
+        />
+        <HeaderButton buttonTitle="Bikes" buttonSlug="bike" buttonClass="btn" />
+        <HeaderButton
+          buttonTitle="Routes"
+          buttonSlug="routes"
+          buttonClass="btn"
+        />
+        <HeaderButton
+          buttonTitle="About"
+          buttonSlug="about"
+          buttonClass="btn"
+        />
+        <HeaderButton
+          buttonTitle="Contact"
+          buttonSlug="contact"
+          buttonClass="btn"
+        />
+        <Link to="/" className="ml-6 flex self-center flex-row mr-6">
+          <h1 className="text-4xl font-bold">Bikes & Bytes</h1>
         </Link>
       </div>
     </header>
