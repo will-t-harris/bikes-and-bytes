@@ -6,10 +6,8 @@ import SEO from "../components/SEO"
 const BytesPage = ({ data }) => (
   <Layout>
     <SEO title="Bytes" />
-    <main>
-      <h1>Bytes</h1>
-      <p>Welcome to the Bytes page</p>
-      <h2>Index</h2>
+    <main className="text-purple-600">
+      <h1>Index</h1>
       {data.allMarkdownRemark.edges.map(post => (
         <Link
           key={post.node.id}
