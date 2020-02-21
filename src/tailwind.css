@@ -2,4 +2,16 @@
 
 @tailwind components;
 
+.btn {
+  @apply flex py-6 mx-auto text-2xl font-semibold rounded justify-center;
+}
+
+.btn:hover {
+  @apply bg-gray-800;
+}
+
+.btn:active {
+  @apply bg-red-900;
+}
+
 @tailwind utilities;

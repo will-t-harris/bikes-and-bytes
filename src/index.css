@@ -623,6 +623,26 @@ video {
   }
 }
 
+.btn {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #2d3748;
+}
+
+.btn:active {
+  background-color: #742a2a;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
