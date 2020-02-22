@@ -23,6 +23,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
     "gatsby-plugin-typescript": "^2.1.27",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0"
