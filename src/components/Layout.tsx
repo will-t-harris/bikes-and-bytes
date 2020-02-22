@@ -26,10 +26,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        <main>{children}</main>
+      <div className="flex flex-col h-full">
+        <main className="flex-1 mx-auto p-8">{children}</main>
       </div>
-      <footer className="bg-gray-600 h-20 text-center">
+      <footer className="w-full text-center border-t border-gray-500 p-4 bottom-0 absolute">
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
