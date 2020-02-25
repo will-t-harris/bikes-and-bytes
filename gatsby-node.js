@@ -33,8 +33,8 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     }
   `)
 
-  const bikeTemplate = require.resolve("./src/templates/bike-graphql.tsx")
-  const postTemplate = require.resolve("./src/templates/post.tsx")
+  const bikeTemplate = require.resolve("./src/templates/bikeTemplate.tsx")
+  const postTemplate = require.resolve("./src/templates/postTemplate.tsx")
 
   if (result.error) {
     console.error("Something went wrong")
