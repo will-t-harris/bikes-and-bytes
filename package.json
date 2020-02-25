@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bikes-and-bytes",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple blog site built with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Will Harris",
   "dependencies": {
     "autoprefixer": "^9.7.4",
     "core-js": "^3",
@@ -23,6 +23,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
     "gatsby-plugin-typescript": "^2.1.27",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0"

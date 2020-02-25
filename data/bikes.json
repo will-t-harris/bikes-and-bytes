@@ -1,18 +1,18 @@
 [
   {
-    "title": "2018 Krampus",
+    "title": "Surly Krampus",
     "slug": "krampus",
     "description": "2018 Surly Krampus",
     "image": "./images/krampus.jpg"
   },
   {
-    "title": "2012 Long Haul Trucker",
+    "title": "Surly Long Haul Trucker",
     "slug": "lht",
     "description": "2012 Surly Long Haul Trucker",
     "image": "./images/long-haul-trucker.jpg"
   },
   {
-    "title": "2015 Kona Unit",
+    "title": "Kona Unit",
     "slug": "unit",
     "description": "2015 Kona Unit singlespeed",
     "image": "./images/kona-unit.jpg"
