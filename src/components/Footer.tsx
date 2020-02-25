@@ -5,14 +5,17 @@ import GithubIcon from "./icons/GithubIcon"
 import LinkedinIcon from "./icons/LinkedinIcon"
 
 const Footer = () => {
-  const iconVisualTheme = "fill-current text-gray-400 hover:text-gray-600"
+  const iconVisualTheme = "fill-current text-gray-400 hover:text-blueGray-900"
+
   return (
-    <footer className="w-full text-center border-t border-gray-500 p-4 bottom-0 absolute">
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-      <div className="flex">
-        <a href="https://twitter.com/will__tweets">
+    <footer className="w-full flex text-center border-t border-gray-500 p-2 bottom-0 absolute bg-gray-600">
+      <div className="flex align-middle">
+        <p className="flex items-center text-gray-400">
+          {`© ${new Date().getFullYear()} Will Harris`}
+        </p>
+      </div>
+      <div className="flex flex-grow">
+        <a href="https://twitter.com/will__tweets" className="ml-auto">
           <TwitterIcon iconVisualTheme={iconVisualTheme} />
         </a>
         <a href="https://www.instagram.com/willbikes/">
