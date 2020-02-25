@@ -33,7 +33,7 @@ const Bike = ({ data }) => {
         <Image
           fluid={bike.image.childImageSharp.fluid}
           alt={bike.title}
-          className="absolute"
+          className="h-auto w-64 mx-auto"
         />
         <p className="text-center">{bike.description}</p>
         <Link to="/" style={{ display: "block" }}>
