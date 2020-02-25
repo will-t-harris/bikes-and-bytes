@@ -8,7 +8,7 @@ const Footer = () => {
   const iconVisualTheme = "fill-current text-gray-400 hover:text-blueGray-900"
 
   return (
-    <footer className="w-full flex text-center border-t border-gray-500 p-2 bottom-0 absolute bg-gray-600">
+    <footer className="w-full flex text-center border-t border-gray-500 p-2 bottom-0 bg-gray-600">
       <div className="flex align-middle">
         <p className="flex items-center text-gray-400">
           {`© ${new Date().getFullYear()} Will Harris`}
