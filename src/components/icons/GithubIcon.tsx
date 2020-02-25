@@ -3,7 +3,7 @@ import React from "react"
 const GithubIcon = ({ iconVisualTheme }) => (
   <svg
     className={iconVisualTheme}
-    enable-background="new -1163 1657.697 56.693 56.693"
+    enableBackground="new -1163 1657.697 56.693 56.693"
     height="56.693px"
     id="Layer_1"
     version="1.1"
