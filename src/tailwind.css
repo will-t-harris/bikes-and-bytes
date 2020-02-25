@@ -4,15 +4,11 @@
 @tailwind components;
 
 .btn {
-  @apply flex py-6 mx-auto text-2xl font-semibold rounded justify-center;
+  @apply flex py-6 mx-auto text-2xl text-blueGray-100 font-semibold justify-center;
 }
 
 .btn:hover {
-  @apply bg-gray-200;
-}
-
-.btn:active {
-  @apply bg-red-900;
+  @apply bg-blueGray-500;
 }
 /* purgecss end ignore */
 
