@@ -5,7 +5,7 @@ import GithubIcon from "./icons/GithubIcon"
 import LinkedinIcon from "./icons/LinkedinIcon"
 
 const Footer = () => {
-  const iconVisualTheme = "fill-current text-gray-400"
+  const iconVisualTheme = "fill-current text-gray-400 hover:text-gray-600"
   return (
     <footer className="w-full text-center border-t border-gray-500 p-4 bottom-0 absolute">
       © {new Date().getFullYear()}, Built with
