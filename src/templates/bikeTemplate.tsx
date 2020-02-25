@@ -12,7 +12,7 @@ export const query = graphql`
       description
       image {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 700, maxHeight: 700) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,11 +30,9 @@ const Bike = ({ data }) => {
       <Layout>
         <SEO title={bike.title} />
         <h1 className="text-center">{bike.title}</h1>
-        <Image
-          fluid={bike.image.childImageSharp.fluid}
-          alt={bike.title}
-          className="h-auto w-64 mx-auto"
-        />
+        <div className="mx-auto max-w-xl">
+          <Image fluid={bike.image.childImageSharp.fluid} alt={bike.title} />
+        </div>
         <p className="text-center">{bike.description}</p>
         <Link to="/" style={{ display: "block" }}>
           Return to homepage

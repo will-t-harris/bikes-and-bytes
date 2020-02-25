@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/SEO"
