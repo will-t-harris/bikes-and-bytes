@@ -1,5 +1,4 @@
 import React, { useState, FC } from "react"
-import axios from "axios"
 
 const ContactForm: FC = () => {
   return (
