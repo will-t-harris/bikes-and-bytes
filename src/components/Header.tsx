@@ -20,11 +20,6 @@ const Header = ({ siteTitle }) => {
         />
         <HeaderButton buttonTitle="Bikes" buttonSlug="bike" buttonClass="btn" />
         <HeaderButton
-          buttonTitle="Routes"
-          buttonSlug="routes"
-          buttonClass="btn"
-        />
-        <HeaderButton
           buttonTitle="About"
           buttonSlug="about"
           buttonClass="btn"
