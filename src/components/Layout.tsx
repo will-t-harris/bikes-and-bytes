@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <main className="flex-1 bg-gray-200 text-gray-800 text-center min-h-screen">
         {children}
       </main>
