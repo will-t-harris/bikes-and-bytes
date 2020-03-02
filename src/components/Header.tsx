@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <div className="flex items-center bg-blueGray-900">
-        <Link to="/" className="ml-6 flex self-center flex-row mr-6 shadow-2xl">
+        <Link to="/" className="ml-6 flex self-center flex-row mr-6">
           <BikeIcon />
           <CodeIcon />
         </Link>
