@@ -26,6 +26,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             frontmatter {
               path
               title
+              date
             }
           }
         }
