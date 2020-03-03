@@ -1,7 +1,7 @@
 ---
 path: "/second-post"
 title: "Second Blog Post"
-date: "02/21/20"
+date: 2020-02-21
 ---
 
 This is my second blog post, pretty cool stuff!
