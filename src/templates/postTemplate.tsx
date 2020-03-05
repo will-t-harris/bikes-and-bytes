@@ -14,10 +14,6 @@ const Post = ({ data }) => {
           className="mt-10 text-col"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <Link to="/bytes" className="mx-8">
-          Back to blog posts
-        </Link>
-        <Link to="/">Return to home page</Link>
       </div>
     </Layout>
   )

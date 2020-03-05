@@ -6,7 +6,9 @@ import SEO from "../components/SEO"
 const BikesPage = () => (
   <Layout>
     <SEO title="Bikes" />
-    <h1 className="text-col">Bikes</h1>
+    <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold text-col">
+      Bikes
+    </h1>
     <p className="text-col">Welcome to the bikes page</p>
     <div className="text-col">
       <Link
