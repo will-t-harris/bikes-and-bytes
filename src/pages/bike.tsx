@@ -6,9 +6,9 @@ import SEO from "../components/SEO"
 const BikesPage = () => (
   <Layout>
     <SEO title="Bikes" />
-    <h1>Bikes</h1>
-    <p>Welcome to the bikes page</p>
-    <div className="">
+    <h1 className="text-col">Bikes</h1>
+    <p className="text-col">Welcome to the bikes page</p>
+    <div className="text-col">
       <Link to="/bike/lht" className="px-4 text-green-800 hover:text-green-400">
         LHT
       </Link>
@@ -22,7 +22,6 @@ const BikesPage = () => (
         Unit
       </Link>
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

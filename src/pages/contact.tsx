@@ -7,9 +7,11 @@ import ContactForm from "../components/ContactForm"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Contact</h1>
+    <h1 className="text-col">Contact</h1>
     <ContactForm />
-    <Link to="/">Go back to the homepage</Link>
+    <Link className="text-col" to="/">
+      Go back to the homepage
+    </Link>
   </Layout>
 )
 
