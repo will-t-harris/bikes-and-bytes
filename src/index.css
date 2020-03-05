@@ -625,6 +625,13 @@ video {
   }
 }
 
+.text-col {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .btn {
   display: flex;
   padding-top: 1.5rem;
@@ -639,6 +646,7 @@ video {
 
 .btn:hover {
   background-color: #627d98;
+  color: #102a43;
 }
 
 /* purgecss end ignore */
