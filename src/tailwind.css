@@ -3,13 +3,30 @@
 
 @tailwind components;
 
+.text-col {
+  @apply block mx-auto w-1/2;
+}
+
+.contact-input {
+  @apply bg-gray-400;
+}
+
+.contact-input:hover {
+  @apply bg-white border-gray-500;
+}
+
+.contact-input:focus {
+  @apply outline-none bg-white shadow-outline border-gray-300;
+}
+
 .btn {
   @apply flex py-6 mx-auto text-2xl text-blueGray-100 font-semibold justify-center;
 }
 
 .btn:hover {
-  @apply bg-blueGray-500;
+  @apply bg-blueGray-500 text-blueGray-900;
 }
+
 /* purgecss end ignore */
 
 @tailwind utilities;

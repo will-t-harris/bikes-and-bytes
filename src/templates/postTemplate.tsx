@@ -8,13 +8,12 @@ const Post = ({ data }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Link to="/bytes" style={{ display: "block" }}>
-          Back to blog posts
-        </Link>
-        <Link to="/">Return to home page</Link>
+      <div className="">
+        <h1 className="pt-16 text-col">{post.frontmatter.title}</h1>
+        <div
+          className="mt-10 text-col"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </Layout>
   )

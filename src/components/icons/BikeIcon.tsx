@@ -2,9 +2,9 @@ import React from "react"
 
 const BikeIcon = () => (
   <svg
-    className="fill-current text-blueGray-100 ml-6"
+    className="fill-current text-blueGray-100 bg-blueGray-900 ml-6"
     width="96"
-    height="55"
+    height="64"
     viewBox="0 0 96 55"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ const BikeIcon = () => (
     </g>
     <defs>
       <clipPath id="clip0">
-        <rect width="96" height="54.8571" fill="white" />
+        <rect width="96" height="64" fill="white" />
       </clipPath>
     </defs>
   </svg>

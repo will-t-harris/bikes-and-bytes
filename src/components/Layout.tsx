@@ -7,27 +7,16 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
 import "../../src/index.css"
 import Footer from "./Footer"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main className="flex-1 bg-gray-200 text-gray-800 text-center min-h-screen">
+      <Header />
+      <main className="flex-1 bg-gray-200 text-gray-800 min-h-screen">
         {children}
       </main>
       <Footer />

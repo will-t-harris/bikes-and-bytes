@@ -6,30 +6,40 @@ import SEO from "../components/SEO"
 const BytesPage = ({ data }) => (
   <Layout>
     <SEO title="Bytes" />
-    <main className="text-purple-600">
-      <h1>Index</h1>
-      {data.allMarkdownRemark.edges.map(post => (
-        <Link
-          key={post.node.id}
-          to={post.node.frontmatter.path}
-          style={{ display: "block" }}
-        >
-          {post.node.frontmatter.title}
-        </Link>
-      ))}
-      <Link to="/">Go back to the homepage</Link>
-    </main>
+    <div className="flex flex-col text-col">
+      <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold">
+        Bytes
+      </h1>
+      <ul className="list-disc">
+        {data &&
+          data.allMarkdownRemark.edges.map(post => (
+            <li>
+              <Link
+                key={post.node.id}
+                to={post.node.frontmatter.path}
+                className="text-2xl hover:underline"
+              >
+                {post.node.frontmatter.title} - {post.node.frontmatter.date}
+              </Link>
+            </li>
+          ))}
+      </ul>
+    </div>
   </Layout>
 )
 
 export const bytesIndexQuery = graphql`
   query BlogPostsIndexQuery {
-    allMarkdownRemark(limit: 10) {
+    allMarkdownRemark(
+      limit: 10
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           frontmatter {
             title
             path
+            date
           }
         }
       }

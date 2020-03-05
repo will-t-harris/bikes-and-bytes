@@ -1,11 +1,10 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import HeaderButton from "./HeaderButton"
 import BikeIcon from "./icons/BikeIcon"
 import CodeIcon from "./icons/CodeIcon"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   return (
     <header>
       <div className="flex items-center bg-blueGray-900">
@@ -20,11 +19,6 @@ const Header = ({ siteTitle }) => {
         />
         <HeaderButton buttonTitle="Bikes" buttonSlug="bike" buttonClass="btn" />
         <HeaderButton
-          buttonTitle="Routes"
-          buttonSlug="routes"
-          buttonClass="btn"
-        />
-        <HeaderButton
           buttonTitle="About"
           buttonSlug="about"
           buttonClass="btn"
@@ -37,14 +31,6 @@ const Header = ({ siteTitle }) => {
       </div>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

@@ -1,16 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
-    <main>
-      <h1>About Me</h1>
-      <p>Welcome to the about page</p>
-      <Link to="/">Go back to the homepage</Link>
-    </main>
+    <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold text-col">
+      About Me
+    </h1>
+    <p className="text-col">
+      I'm a web developer currently living in San Francisco.{" "}
+    </p>
+    <p className="text-col">
+      I'm interested in open source software, online privacy, and web security.
+    </p>
+    <p className="text-col">
+      I'm passionate about bikes--I think they make the world a better place.
+      I'm happiest bumping along on a dirt road on a sunny day in the middle of
+      nowhere carrying all that I need on my bike.
+    </p>
   </Layout>
 )
 

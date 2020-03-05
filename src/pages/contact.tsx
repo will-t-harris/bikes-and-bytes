@@ -7,11 +7,14 @@ import ContactForm from "../components/ContactForm"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <main>
-      <h1>Contact</h1>
-      <ContactForm />
-      <Link to="/">Go back to the homepage</Link>
-    </main>
+    <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold text-col">
+      Get in touch!
+    </h1>
+    <p className="py-4 font-serif text-xl text-gray-900 font-bold text-col">
+      Want to work together? Got an awesome project in mind? Drop me a line
+      through the contact form below!
+    </p>
+    <ContactForm />
   </Layout>
 )
 
