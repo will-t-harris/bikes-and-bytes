@@ -632,6 +632,22 @@ video {
   width: 50%;
 }
 
+.contact-input {
+  background-color: #cbd5e0;
+}
+
+.contact-input:hover {
+  background-color: #fff;
+  border-color: #a0aec0;
+}
+
+.contact-input:focus {
+  outline: 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #e2e8f0;
+}
+
 .btn {
   display: flex;
   padding-top: 1.5rem;
