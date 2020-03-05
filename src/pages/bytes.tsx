@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 const BytesPage = ({ data }) => (
   <Layout>
     <SEO title="Bytes" />
-    <div className="flex flex-col">
+    <div className="flex flex-col text-col">
       <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold">
         Bytes
       </h1>
@@ -19,7 +19,7 @@ const BytesPage = ({ data }) => (
                 to={post.node.frontmatter.path}
                 className="text-2xl hover:underline"
               >
-                {post.node.frontmatter.title} -- {post.node.frontmatter.date}
+                {post.node.frontmatter.title} - {post.node.frontmatter.date}
               </Link>
             </li>
           ))}
@@ -30,7 +30,10 @@ const BytesPage = ({ data }) => (
 
 export const bytesIndexQuery = graphql`
   query BlogPostsIndexQuery {
-    allMarkdownRemark(limit: 10) {
+    allMarkdownRemark(
+      limit: 10
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           frontmatter {
