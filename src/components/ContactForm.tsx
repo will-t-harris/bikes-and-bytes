@@ -8,7 +8,7 @@ const ContactForm: FC = () => {
     const value = target.value
     const name = target.name
 
-    setState({ [name]: value })
+    setState({ ...state, [name]: value })
   }
 
   return (
