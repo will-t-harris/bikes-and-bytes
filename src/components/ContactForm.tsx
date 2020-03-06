@@ -8,7 +8,12 @@ const ContactForm: FC = () => {
     const value = target.value
     const name = target.name
 
-    setState({ [name]: value })
+    setState({ ...state, [name]: value })
+  }
+
+  const resetForm = event => {
+    event.preventDefault()
+    setState({ ...state, name: "", email: "", message: "" })
   }
 
   return (
@@ -67,6 +72,13 @@ const ContactForm: FC = () => {
             >
               Send
             </button>
+            <div
+              className="my-4 ml-8 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
+              role="button"
+              onClick={resetForm}
+            >
+              Reset Form
+            </div>
           </div>
         </p>
       </form>
