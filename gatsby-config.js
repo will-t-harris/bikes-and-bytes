@@ -25,5 +25,11 @@ module.exports = {
         component: require.resolve("./src/components/Layout.tsx"),
       },
     },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+      },
+    },
   ],
 }
