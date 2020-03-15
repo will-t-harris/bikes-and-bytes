@@ -1,12 +1,11 @@
 import React from "react"
-import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
 const Post = ({ data }) => {
   const { markdownRemark: post } = data
   return (
-    <Layout>
+    <>
       <SEO title={post.frontmatter.title} />
       <div className="">
         <h1 className="pt-16 text-col">{post.frontmatter.title}</h1>
@@ -15,7 +14,7 @@ const Post = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
-    </Layout>
+    </>
   )
 }
 

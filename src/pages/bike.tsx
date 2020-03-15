@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const BikesPage = () => (
-  <Layout>
+  <>
     <SEO title="Bikes" />
     <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold text-col">
       Bikes
@@ -30,7 +29,7 @@ const BikesPage = () => (
         Unit
       </Link>
     </div>
-  </Layout>
+  </>
 )
 
 export default BikesPage

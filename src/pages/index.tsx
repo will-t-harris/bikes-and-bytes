@@ -1,10 +1,9 @@
 import React from "react"
 
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <div className="mx-64 py-10">
       <p>
@@ -96,7 +95,7 @@ const IndexPage = () => (
         venenatis lectus magna fringilla urna.
       </p>
     </div>
-  </Layout>
+  </>
 )
 
 export default IndexPage

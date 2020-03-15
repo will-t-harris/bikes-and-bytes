@@ -5410,6 +5410,13 @@ gatsby-page-utils@^0.0.39:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-layout@^1.1.23:
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.23.tgz#69c28b6743f7f0cdba65e5df6b615367d4c10edf"
+  integrity sha512-2nmV0o64EKUR3YqslWv+1ZhvT139NwCPHLN46uyek7ofzWyBtl2bXpnQ1d2LoYeljgEDrPIWpuIS0EzKCJG4nA==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+
 gatsby-plugin-offline@^3.0.32:
   version "3.0.35"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.35.tgz#9b074a012599b9a4f3adb9c57ce1d87fdf8d0aad"

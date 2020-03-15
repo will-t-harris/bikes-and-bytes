@@ -19,5 +19,11 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve("./src/components/Layout.tsx"),
+      },
+    },
   ],
 }

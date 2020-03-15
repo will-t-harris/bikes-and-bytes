@@ -1,9 +1,8 @@
 import React from "react"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const AboutPage = () => (
-  <Layout>
+  <>
     <SEO title="About" />
     <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold text-col">
       About Me
@@ -19,7 +18,7 @@ const AboutPage = () => (
       I'm happiest bumping along on a dirt road on a sunny day in the middle of
       nowhere carrying all that I need on my bike.
     </p>
-  </Layout>
+  </>
 )
 
 export default AboutPage
