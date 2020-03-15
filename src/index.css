@@ -648,7 +648,7 @@ video {
   border-color: #e2e8f0;
 }
 
-.btn {
+.header-btn {
   display: flex;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -660,7 +660,7 @@ video {
   justify-content: center;
 }
 
-.btn:hover {
+.header-btn:hover {
   background-color: #627d98;
   color: #102a43;
 }
