@@ -23,11 +23,6 @@ const Header = () => {
           buttonClass="header-btn"
         />
         <HeaderButton
-          buttonTitle="About"
-          buttonSlug="about"
-          buttonClass="header-btn"
-        />
-        <HeaderButton
           buttonTitle="Contact"
           buttonSlug="contact"
           buttonClass="header-btn"
