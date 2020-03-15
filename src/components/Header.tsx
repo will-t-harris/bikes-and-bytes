@@ -15,18 +15,17 @@ const Header = () => {
         <HeaderButton
           buttonTitle="Bytes"
           buttonSlug="bytes"
-          buttonClass="btn"
+          buttonClass="header-btn"
         />
-        <HeaderButton buttonTitle="Bikes" buttonSlug="bike" buttonClass="btn" />
         <HeaderButton
-          buttonTitle="About"
-          buttonSlug="about"
-          buttonClass="btn"
+          buttonTitle="Bikes"
+          buttonSlug="bike"
+          buttonClass="header-btn"
         />
         <HeaderButton
           buttonTitle="Contact"
           buttonSlug="contact"
-          buttonClass="btn"
+          buttonClass="header-btn"
         />
       </div>
     </header>

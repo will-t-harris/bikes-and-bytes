@@ -19,11 +19,11 @@
   @apply outline-none bg-white shadow-outline border-gray-300;
 }
 
-.btn {
+.header-btn {
   @apply flex py-6 mx-auto text-2xl text-blueGray-100 font-semibold justify-center;
 }
 
-.btn:hover {
+.header-btn:hover {
   @apply bg-blueGray-500 text-blueGray-900;
 }
 

@@ -1,21 +1,22 @@
 import React from "react"
-import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
 const Post = ({ data }) => {
   const { markdownRemark: post } = data
   return (
-    <Layout>
+    <>
       <SEO title={post.frontmatter.title} />
-      <div className="">
-        <h1 className="pt-16 text-col">{post.frontmatter.title}</h1>
+      <div className="grid grid-cols-4">
+        <h1 className="pt-16 col-start-2 col-span-2">
+          {post.frontmatter.title}
+        </h1>
         <div
-          className="mt-10 text-col"
+          className="my-10 col-start-2 col-span-2"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
-    </Layout>
+    </>
   )
 }
 

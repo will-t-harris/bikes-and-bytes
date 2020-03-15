@@ -1,10 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const BytesPage = ({ data }) => (
-  <Layout>
+  <>
     <SEO title="Bytes" />
     <div className="flex flex-col text-col">
       <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold">
@@ -25,7 +24,7 @@ const BytesPage = ({ data }) => (
           ))}
       </ul>
     </div>
-  </Layout>
+  </>
 )
 
 export const bytesIndexQuery = graphql`
