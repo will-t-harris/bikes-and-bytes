@@ -5,8 +5,8 @@ import SEO from "../components/SEO"
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <div className="mx-64 py-10">
-      <p>
+    <div className="grid grid-cols-4 py-10">
+      <p className="col-start-2 col-span-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Eleifend donec
         pretium vulputate sapien nec. Sed vulputate mi sit amet mauris.
@@ -24,7 +24,7 @@ const IndexPage = () => (
         arcu odio ut sem nulla. Consectetur adipiscing elit pellentesque
         habitant morbi.
       </p>
-      <p className="mt-10">
+      <p className="mt-10 col-start-2 col-span-2">
         Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
         erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
         Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
@@ -38,7 +38,7 @@ const IndexPage = () => (
         vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
         venenatis lectus magna fringilla urna.
       </p>
-      <p className="mt-10">
+      <p className="mt-10 col-start-2 col-span-2">
         Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
         erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
         Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
@@ -52,7 +52,7 @@ const IndexPage = () => (
         vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
         venenatis lectus magna fringilla urna.
       </p>
-      <p className="mt-10">
+      <p className="mt-10 col-start-2 col-span-2">
         Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
         erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
         Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
@@ -66,7 +66,7 @@ const IndexPage = () => (
         vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
         venenatis lectus magna fringilla urna.
       </p>
-      <p className="mt-10">
+      <p className="mt-10 col-start-2 col-span-2">
         Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
         erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
         Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
@@ -80,7 +80,7 @@ const IndexPage = () => (
         vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
         venenatis lectus magna fringilla urna.
       </p>
-      <p className="mt-10">
+      <p className="mt-10 col-start-2 col-span-2">
         Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
         erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
         Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
