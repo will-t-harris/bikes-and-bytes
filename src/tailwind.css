@@ -3,6 +3,10 @@
 
 @tailwind components;
 
+.about-text {
+  @apply mt-10 col-start-2 font-serif font-semibold text-lg;
+}
+
 .text-col {
   @apply block mx-auto w-1/2;
 }
