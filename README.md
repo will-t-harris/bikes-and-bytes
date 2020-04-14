@@ -7,4 +7,4 @@
 - Gatsby
 - React
 - TailwindCSS
-- PrismaJS
+- PrismJS
