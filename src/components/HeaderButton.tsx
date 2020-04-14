@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const HeaderButton = ({ buttonTitle, buttonSlug, buttonClass }) => (
   <>
-    <div className="flex-auto">
+    <div className="flex flex-auto">
       <Link to={buttonSlug} className={buttonClass}>
         {buttonTitle}
       </Link>

@@ -1,102 +1,28 @@
 import React from "react"
-
-import Layout from "../components/Layout"
+import Typewriter from "../components/TypeWriter"
 import SEO from "../components/SEO"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <div className="mx-64 py-10">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Eleifend donec
-        pretium vulputate sapien nec. Sed vulputate mi sit amet mauris.
-        Adipiscing bibendum est ultricies integer quis auctor. A scelerisque
-        purus semper eget duis at tellus at urna. Sit amet consectetur
-        adipiscing elit pellentesque habitant morbi tristique. Hac habitasse
-        platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
-        Dui sapien eget mi proin sed. Fringilla est ullamcorper eget nulla
-        facilisi etiam. Libero justo laoreet sit amet cursus. Quam adipiscing
-        vitae proin sagittis nisl rhoncus mattis. Malesuada nunc vel risus
-        commodo. Sagittis purus sit amet volutpat consequat mauris nunc. Morbi
-        tincidunt augue interdum velit. Phasellus faucibus scelerisque eleifend
-        donec pretium vulputate sapien nec. Adipiscing bibendum est ultricies
-        integer. Risus nullam eget felis eget nunc lobortis mattis. Id ornare
-        arcu odio ut sem nulla. Consectetur adipiscing elit pellentesque
-        habitant morbi.
+    <div className="grid grid-cols-4 py-10">
+      <h1 className="col-start-2 col-end-4 font-mono text-4xl text-gray-900 font-bold">
+        <Typewriter />
+      </h1>
+      <p className="about-text">
+        I'm a developer currently living in San Francisco.{" "}
       </p>
-      <p className="mt-10">
-        Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
-        erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
-        Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
-        vulputate eu scelerisque felis imperdiet proin fermentum. Mauris vitae
-        ultricies leo integer malesuada nunc. Vel pretium lectus quam id leo.
-        Quis hendrerit dolor magna eget est lorem ipsum dolor. Adipiscing at in
-        tellus integer feugiat scelerisque varius. Neque gravida in fermentum et
-        sollicitudin ac orci phasellus egestas. Nulla facilisi etiam dignissim
-        diam. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue.
-        Tincidunt tortor aliquam nulla facilisi. Arcu vitae elementum curabitur
-        vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
-        venenatis lectus magna fringilla urna.
+      <p className="about-text">
+        I'm interested in open source software, online privacy, cryptography,
+        and web security.
       </p>
-      <p className="mt-10">
-        Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
-        erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
-        Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
-        vulputate eu scelerisque felis imperdiet proin fermentum. Mauris vitae
-        ultricies leo integer malesuada nunc. Vel pretium lectus quam id leo.
-        Quis hendrerit dolor magna eget est lorem ipsum dolor. Adipiscing at in
-        tellus integer feugiat scelerisque varius. Neque gravida in fermentum et
-        sollicitudin ac orci phasellus egestas. Nulla facilisi etiam dignissim
-        diam. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue.
-        Tincidunt tortor aliquam nulla facilisi. Arcu vitae elementum curabitur
-        vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
-        venenatis lectus magna fringilla urna.
-      </p>
-      <p className="mt-10">
-        Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
-        erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
-        Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
-        vulputate eu scelerisque felis imperdiet proin fermentum. Mauris vitae
-        ultricies leo integer malesuada nunc. Vel pretium lectus quam id leo.
-        Quis hendrerit dolor magna eget est lorem ipsum dolor. Adipiscing at in
-        tellus integer feugiat scelerisque varius. Neque gravida in fermentum et
-        sollicitudin ac orci phasellus egestas. Nulla facilisi etiam dignissim
-        diam. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue.
-        Tincidunt tortor aliquam nulla facilisi. Arcu vitae elementum curabitur
-        vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
-        venenatis lectus magna fringilla urna.
-      </p>
-      <p className="mt-10">
-        Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
-        erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
-        Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
-        vulputate eu scelerisque felis imperdiet proin fermentum. Mauris vitae
-        ultricies leo integer malesuada nunc. Vel pretium lectus quam id leo.
-        Quis hendrerit dolor magna eget est lorem ipsum dolor. Adipiscing at in
-        tellus integer feugiat scelerisque varius. Neque gravida in fermentum et
-        sollicitudin ac orci phasellus egestas. Nulla facilisi etiam dignissim
-        diam. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue.
-        Tincidunt tortor aliquam nulla facilisi. Arcu vitae elementum curabitur
-        vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
-        venenatis lectus magna fringilla urna.
-      </p>
-      <p className="mt-10">
-        Aliquet nec ullamcorper sit amet risus. Mattis molestie a iaculis at
-        erat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
-        Netus et malesuada fames ac turpis egestas maecenas. Tellus in metus
-        vulputate eu scelerisque felis imperdiet proin fermentum. Mauris vitae
-        ultricies leo integer malesuada nunc. Vel pretium lectus quam id leo.
-        Quis hendrerit dolor magna eget est lorem ipsum dolor. Adipiscing at in
-        tellus integer feugiat scelerisque varius. Neque gravida in fermentum et
-        sollicitudin ac orci phasellus egestas. Nulla facilisi etiam dignissim
-        diam. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue.
-        Tincidunt tortor aliquam nulla facilisi. Arcu vitae elementum curabitur
-        vitae nunc. Et malesuada fames ac turpis egestas. Purus sit amet luctus
-        venenatis lectus magna fringilla urna.
+      <p className="about-text">
+        I'm passionate about bikes--I think they make the world a better place.
+        I'm happiest bumping along on a dirt road on a sunny day in the middle
+        of nowhere carrying all that I need on my bike.
       </p>
     </div>
-  </Layout>
+  </>
 )
 
 export default IndexPage

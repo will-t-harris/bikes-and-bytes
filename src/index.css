@@ -625,7 +625,39 @@ video {
   }
 }
 
-.btn {
+.about-text {
+  margin-top: 2.5rem;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.text-col {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.contact-input {
+  background-color: #cbd5e0;
+}
+
+.contact-input:hover {
+  background-color: #fff;
+  border-color: #a0aec0;
+}
+
+.contact-input:focus {
+  outline: 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #e2e8f0;
+}
+
+.header-btn {
   display: flex;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -637,13 +669,8 @@ video {
   justify-content: center;
 }
 
-.btn:hover {
-  background-color: #627d98;
-}
-
-.bg-texture {
-  background-color: #d9e2ec;
-  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ecead9' fill-opacity='0.75'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.header-btn:hover {
+  color: #9fb3c8;
 }
 
 /* purgecss end ignore */
