@@ -4,11 +4,10 @@ import HeaderButton from "./HeaderButton"
 import BikeIcon from "./icons/BikeIcon"
 import CodeIcon from "./icons/CodeIcon"
 
-const toggleMenu = () => {
-  document.getElementById("nav-content").classList.toggle("hidden")
-}
-
 const Header = () => {
+  const toggleMenu = () => {
+    document.getElementById("nav-content").classList.toggle("hidden")
+  }
   return (
     <nav className="flex items-center justify-between flex-wrap bg-blueGray-900 p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
@@ -18,7 +17,13 @@ const Header = () => {
         </Link>
       </div>
       <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 " onClick={toggleMenu}>
+        <button
+          className="flex items-center px-12 py-2 "
+          onClick={toggleMenu}
+          onBlur={() => {
+            setTimeout(toggleMenu, 50)
+          }}
+        >
           <svg
             className="fill-current h-6 w-6 text-white"
             viewBox="0 0 20 20"
@@ -35,17 +40,17 @@ const Header = () => {
       >
         <HeaderButton
           buttonTitle="Bytes"
-          buttonSlug="bytes"
+          buttonSlug="/bytes"
           buttonClass="header-btn inline-block lg:inline-block lg:mt-0"
         />
         <HeaderButton
           buttonTitle="Bikes"
-          buttonSlug="bike"
+          buttonSlug="/bike"
           buttonClass="header-btn lg:inline-block lg:mt-0"
         />
         <HeaderButton
           buttonTitle="Contact"
-          buttonSlug="contact"
+          buttonSlug="/contact"
           buttonClass="header-btn lg:inline-block lg:mt-0"
         />
       </div>
