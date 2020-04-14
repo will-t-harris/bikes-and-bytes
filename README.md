@@ -2,7 +2,7 @@
 
 # Bikes & Bytes personal blog
 
-## Build with:
+## Built with:
 
 - Gatsby
 - React
