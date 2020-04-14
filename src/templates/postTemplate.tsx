@@ -8,7 +8,7 @@ const Post = ({ data }) => {
     <>
       <SEO title={post.frontmatter.title} />
       <div className="grid grid-cols-4">
-        <h1 className="pt-16 col-start-2 col-span-2">
+        <h1 className="pt-16 col-start-2 col-span-2 text-2xl font-semibold">
           {post.frontmatter.title}
         </h1>
         <div
