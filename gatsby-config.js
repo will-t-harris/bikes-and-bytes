@@ -16,6 +16,13 @@ module.exports = {
         path: `./data/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/blog`,
+        name: `blog`,
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-transformer-remark`,
