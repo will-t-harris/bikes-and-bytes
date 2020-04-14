@@ -36,7 +36,7 @@ const Header = () => {
         <HeaderButton
           buttonTitle="Bytes"
           buttonSlug="bytes"
-          buttonClass="header-btn lg:inline-block lg:mt-0"
+          buttonClass="header-btn inline-block lg:inline-block lg:mt-0"
         />
         <HeaderButton
           buttonTitle="Bikes"

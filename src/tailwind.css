@@ -28,7 +28,7 @@
 }
 
 .header-btn:hover {
-  @apply bg-blueGray-500 text-blueGray-900;
+  @apply text-blueGray-300;
 }
 
 /* purgecss end ignore */
