@@ -6,7 +6,7 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <div className="grid grid-cols-4 py-10">
-      <h1 className="col-start-2 font-mono text-4xl text-gray-900 font-bold">
+      <h1 className="col-start-2 col-end-4 font-mono text-4xl text-gray-900 font-bold">
         <Typewriter />
       </h1>
       <p className="about-text">

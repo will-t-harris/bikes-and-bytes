@@ -628,6 +628,7 @@ video {
 .about-text {
   margin-top: 2.5rem;
   grid-column-start: 2;
+  grid-column-end: 4;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: 1.125rem;
@@ -669,8 +670,7 @@ video {
 }
 
 .header-btn:hover {
-  background-color: #627d98;
-  color: #102a43;
+  color: #9fb3c8;
 }
 
 /* purgecss end ignore */
