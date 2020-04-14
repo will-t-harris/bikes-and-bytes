@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/data/blog`,
+        path: `${__dirname}/data/blog/`,
         name: `blog`,
       },
     },
@@ -27,7 +27,14 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`],
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: { js: "javascript" },
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -41,6 +48,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
+        ignore: ["prismjs/themes/prism-okaidia.css"],
       },
     },
   ],
