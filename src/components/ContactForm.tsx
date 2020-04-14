@@ -64,23 +64,22 @@ const ContactForm: FC = () => {
             ></textarea>
           </label>
         </p>
-        <p>
-          <div className="flex justify-end">
-            <button
-              className="my-4 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
-              type="submit"
-            >
-              Send
-            </button>
-            <div
-              className="my-4 ml-8 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
-              role="button"
-              onClick={resetForm}
-            >
-              Reset Form
-            </div>
+
+        <div className="flex justify-end">
+          <button
+            className="my-4 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
+            type="submit"
+          >
+            Send
+          </button>
+          <div
+            className="my-4 ml-8 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
+            role="button"
+            onClick={resetForm}
+          >
+            Reset Form
           </div>
-        </p>
+        </div>
       </form>
     </div>
   )
