@@ -11,7 +11,7 @@ const BikesPage = () => (
     <p className="text-col">Welcome to the bikes page</p>
     <div className="text-col">
       <Link
-        to="/bike/lht"
+        to="/bike/long-haul-trucker"
         className="px-4 ml-10 text-green-800 hover:text-green-500 hover:underline"
       >
         Long Haul Trucker

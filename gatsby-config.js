@@ -13,7 +13,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./data/`,
+        path: `${__dirname}/data/bikes/`,
+        name: `bikes`,
       },
     },
     {
@@ -27,14 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              aliases: { js: "javascript" },
-            },
-          },
-        ],
+        plugins: [`gatsby-remark-smartypants`, `gatsby-remark-prismjs`],
       },
     },
     `gatsby-transformer-sharp`,

@@ -24,7 +24,7 @@ thing = !thing
 thing === false // true
 ```
 
-Here we can see how the `!` operator _casts_ the value from a string value (truthy) to it's opposite Boolean value `false`. The same conversion happens when we use the `!` operator on any primitive type in JavaScript. If the value is already truthy it is cast to `false`, and vice versa.
+Here we can see how the `!` operator _casts_ the value from a string value (truthy) to it's opposite Boolean value `false`. The same conversion happens when we use the `!` operator on any value in JavaScript. If the value is already truthy it is cast to `false`, and vice versa.
 
 It follows then that `!!` just performs this inversion twice.
 

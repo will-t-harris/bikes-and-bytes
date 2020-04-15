@@ -12,9 +12,8 @@ const BytesPage = ({ data }) => (
       <ul className="list-disc">
         {data &&
           data.allMarkdownRemark.edges.map(post => (
-            <li>
+            <li key={post.node.id}>
               <Link
-                key={post.node.id}
                 to={post.node.frontmatter.path}
                 className="text-2xl hover:underline"
               >
@@ -27,23 +26,25 @@ const BytesPage = ({ data }) => (
   </>
 )
 
+export default BytesPage
+
 export const bytesIndexQuery = graphql`
   query BlogPostsIndexQuery {
     allMarkdownRemark(
       limit: 10
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { path: { regex: "/[/]/" } } }
     ) {
       edges {
         node {
+          id
           frontmatter {
             title
             path
-            date
+            date(formatString: "MMM Do YYYY")
           }
         }
       }
     }
   }
 `
-
-export default BytesPage
