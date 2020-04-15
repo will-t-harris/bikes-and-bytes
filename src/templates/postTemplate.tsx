@@ -2,23 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
-const Post = ({ data }) => {
-  const { markdownRemark: post } = data
-  return (
-    <>
-      <SEO title={post.frontmatter.title} />
-      <div className="grid grid-cols-4">
-        <h1 className="pt-16 col-start-2 col-span-2 text-2xl font-semibold">
-          {post.frontmatter.title}
-        </h1>
-        <div
-          className="my-10 col-start-2 col-span-2"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-      </div>
-    </>
-  )
-}
+const Post = ({ data }) => (
+  <>
+    <SEO title={data.markdownRemark.frontmatter.title} />
+    <div className="grid grid-cols-4">
+      <h1 className="pt-16 col-start-2 col-span-2 text-2xl font-semibold">
+        {data.markdownRemark.frontmatter.title}
+      </h1>
+      <div
+        className="my-10 col-start-2 col-span-2"
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+      />
+    </div>
+  </>
+)
 
 export default Post
 
