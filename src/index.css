@@ -673,6 +673,22 @@ video {
   color: #9fb3c8;
 }
 
+.markdown blockquote {
+  padding: 0;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: #cbd5e0;
+  margin-bottom: 1rem;
+  border-left-width: 4px;
+  border-color: #718096;
+  font-style: italic;
+}
+
+.markdown blockquote > p {
+  margin-bottom: 0;
+}
+
 /* purgecss end ignore */
 
 .sr-only {
