@@ -12,13 +12,16 @@ const BytesPage = ({ data }) => (
       <ul className="list-disc">
         {data &&
           data.allMarkdownRemark.edges.map(post => (
-            <li key={post.node.id}>
+            <li key={post.node.id} className="mb-8">
               <Link
                 to={post.node.frontmatter.path}
                 className="text-2xl font-semibold hover:underline"
               >
-                {post.node.frontmatter.title} - {post.node.frontmatter.date}
+                {post.node.frontmatter.title}
               </Link>
+              <p>
+                <em>{post.node.frontmatter.date}</em>
+              </p>
               <div
                 className="italic text-lg"
                 dangerouslySetInnerHTML={{
