@@ -14,7 +14,7 @@ const Post = ({ data }) => {
           {title}
         </h1>
         <div
-          className="my-10 col-start-2 col-span-2 leading-8"
+          className="markdown my-10 col-start-2 col-span-2 leading-8"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
