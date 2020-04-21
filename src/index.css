@@ -641,6 +641,8 @@ video {
   width: 50%;
 }
 
+/* Contact Inputs */
+
 .contact-input {
   background-color: #cbd5e0;
 }
@@ -657,6 +659,8 @@ video {
   border-color: #e2e8f0;
 }
 
+/* Header Buttons */
+
 .header-btn {
   display: flex;
   padding-top: 1.5rem;
@@ -671,6 +675,40 @@ video {
 
 .header-btn:hover {
   color: #9fb3c8;
+}
+
+/* Markdown Blockquotes */
+
+.markdown blockquote {
+  padding: 0;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: #cbd5e0;
+  margin-bottom: 1rem;
+  border-left-width: 4px;
+  border-color: #718096;
+  font-style: italic;
+}
+
+.markdown blockquote > p {
+  margin-bottom: 0;
+}
+
+/* Markdown Paragraphs */
+
+.markdown p {
+  margin-bottom: 1rem;
+}
+
+/* Markdown Links */
+
+.markdown a {
+  color: #2f855a;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
 }
 
 /* purgecss end ignore */
