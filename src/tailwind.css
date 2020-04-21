@@ -11,6 +11,7 @@
   @apply block mx-auto w-1/2;
 }
 
+/* Contact Inputs */
 .contact-input {
   @apply bg-gray-400;
 }
@@ -23,6 +24,7 @@
   @apply outline-none bg-white shadow-outline border-gray-300;
 }
 
+/* Header Buttons */
 .header-btn {
   @apply flex py-6 mx-auto text-2xl text-blueGray-100 font-semibold justify-center;
 }
@@ -31,12 +33,27 @@
   @apply text-blueGray-300;
 }
 
+/* Markdown Blockquotes */
 .markdown blockquote {
   @apply p-0 p-2 mx-6 bg-gray-400 mb-4 border-l-4 border-gray-600 italic;
 }
 
 .markdown blockquote > p {
   @apply mb-0;
+}
+
+/* Markdown Paragraphs */
+.markdown p {
+  @apply mb-4;
+}
+
+/* Markdown Links */
+.markdown a {
+  @apply text-green-700;
+}
+
+.markdown a:hover {
+  @apply underline;
 }
 
 /* purgecss end ignore */
