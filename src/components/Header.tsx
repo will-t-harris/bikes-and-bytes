@@ -1,13 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import HeaderButton from "./HeaderButton"
 import BikeIcon from "./icons/BikeIcon"
 import CodeIcon from "./icons/CodeIcon"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   const toggleMenu = () => {
-    document.getElementById("nav-content").classList.toggle("hidden")
+    setIsOpen(!isOpen)
   }
+
   return (
     <nav className="flex items-center justify-between flex-wrap bg-blueGray-900 p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
@@ -35,8 +38,9 @@ const Header = () => {
         </button>
       </div>
       <div
-        className="hidden w-full block flex-grow lg:flex lg:items-center lg:justify-center lg:w-auto"
-        id="nav-content"
+        className={`${
+          isOpen ? "" : "hidden"
+        } w-full block flex-grow lg:flex lg:items-center lg:justify-center lg:w-auto`}
       >
         <HeaderButton
           buttonTitle="Bytes"
