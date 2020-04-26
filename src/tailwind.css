@@ -30,7 +30,7 @@
 }
 
 .header-btn:hover {
-  @apply text-blueGray-300;
+  @apply text-pink-600;
 }
 
 /* Markdown Blockquotes */
