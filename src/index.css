@@ -673,10 +673,6 @@ video {
   justify-content: center;
 }
 
-.header-btn:hover {
-  color: #d53f8c;
-}
-
 /* Markdown Blockquotes */
 
 .markdown blockquote {
