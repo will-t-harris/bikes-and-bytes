@@ -22,12 +22,6 @@ const BytesPage = ({ data }) => (
               <p>
                 <em>{post.node.frontmatter.date}</em>
               </p>
-              <div
-                className="italic text-lg"
-                dangerouslySetInnerHTML={{
-                  __html: post.node.excerpt,
-                }}
-              ></div>
             </li>
           ))}
       </ul>

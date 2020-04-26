@@ -29,10 +29,6 @@
   @apply flex py-6 mx-auto text-2xl text-blueGray-100 font-semibold justify-center;
 }
 
-.header-btn:hover {
-  @apply text-blueGray-300;
-}
-
 /* Markdown Blockquotes */
 .markdown blockquote {
   @apply p-0 p-2 mx-6 bg-gray-400 mb-4 border-l-4 border-gray-600 italic;

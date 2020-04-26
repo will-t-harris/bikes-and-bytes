@@ -17,55 +17,73 @@ const ContactForm: FC = () => {
   }
 
   return (
-    <div className="flex justify-center border border-blueGray-700">
+    <div className="border border-blueGray-700">
       <form
         name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        className="w-full max-w-sm flex flex-col mx-auto"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            Your Name:{" "}
+
+        <div className="md:flex md:items-center my-6">
+          <div className="md:w-1/3">
+            <label
+              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              htmlFor="name"
+            >
+              Name
+            </label>
+          </div>
+          <div className="md:w-2/3">
             <input
-              className="my-4 rounded contact-input"
-              type="text"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              id="name"
               name="name"
+              type="text"
               value={state.name}
               onChange={handleInputChange}
-              required
             />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email:{" "}
+          </div>
+        </div>
+        <div className="md:flex md:items-center mb-6">
+          <div className="md:w-1/3">
+            <label
+              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              htmlFor="name"
+            >
+              Email
+            </label>
+          </div>
+          <div className="md:w-2/3">
             <input
-              className="my-4 rounded contact-input"
-              type="email"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              id="email"
               name="email"
+              type="text"
               value={state.email}
               onChange={handleInputChange}
-              required
             />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:{" "}
+          </div>
+        </div>
+        <div className="md:flex md:items-center">
+          <div className="md:w-1/3">
+            <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+              Message
+            </label>
+          </div>
+          <div className="md:w-2/3">
             <textarea
-              className="rounded contact-input"
+              className="rounded contact-input form-textarea w-full"
               name="message"
-              cols={22}
               value={state.message}
               onChange={handleInputChange}
               required
             ></textarea>
-          </label>
-        </p>
-
-        <div className="flex justify-end">
+          </div>
+        </div>
+        <div className="flex justify-end mr-4">
           <button
             className="my-4 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
             type="submit"

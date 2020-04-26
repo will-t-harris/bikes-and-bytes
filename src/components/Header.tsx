@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-blueGray-900 p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-blueGray-900 px-6 ">
       <div className="flex items-center flex-shrink-0 mr-6">
         <Link to="/" className="ml-6 flex self-center flex-row mr-6">
           <BikeIcon />
