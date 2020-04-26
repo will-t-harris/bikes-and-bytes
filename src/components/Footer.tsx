@@ -5,27 +5,23 @@ import GithubIcon from "./icons/GithubIcon"
 import LinkedinIcon from "./icons/LinkedinIcon"
 
 const Footer = () => {
-  const iconVisualTheme = "fill-current text-gray-400 hover:text-blueGray-900"
+  const iconVisualTheme =
+    "fill-current text-gray-400 hover:text-pink-600 transition ease-in-out duration-300"
 
   return (
-    <footer className="w-full flex text-center border-t border-gray-500 py-4 px-12 bottom-0 bg-gray-600">
-      <div className="flex align-middle">
-        <p className="flex items-center text-gray-400">
-          {`© ${new Date().getFullYear()} Will Harris`}
-        </p>
-      </div>
-      <div className="flex flex-grow">
-        <a href="https://twitter.com/will__tweets" className="ml-auto">
+    <footer className="w-full flex text-center py-2 px-12 bg-gray-800">
+      <div className="flex mx-auto">
+        <a href="https://twitter.com/will__tweets">
           <TwitterIcon iconVisualTheme={iconVisualTheme} />
         </a>
-        <a href="https://www.instagram.com/willbikes/">
-          <InstagramIcon iconVisualTheme={iconVisualTheme} />
+        <a href="https://www.linkedin.com/in/will-t-harris/">
+          <LinkedinIcon iconVisualTheme={iconVisualTheme} />
         </a>
         <a href="https://www.github.com/will-t-harris">
           <GithubIcon iconVisualTheme={iconVisualTheme} />
         </a>
-        <a href="https://www.linkedin.com/in/will-t-harris/">
-          <LinkedinIcon iconVisualTheme={iconVisualTheme} />
+        <a href="https://www.instagram.com/willbikes/">
+          <InstagramIcon iconVisualTheme={iconVisualTheme} />
         </a>
       </div>
     </footer>
