@@ -12,8 +12,6 @@ I should also note my understanding is that all of these commands will work with
 
 [^1]: I learned about many of these shortcuts from [this blog post](https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html)
 
-
-
 ## Navigating the current line
 
 Moving around the current line in your terminal with the <kbd>←</kbd> and <kbd>→</kbd> keys is slow - it's no way to live your life. There's a better way! The following table shows some shortcuts for navigating the current command quickly.
