@@ -4,7 +4,7 @@ title: "Shell: Keyboard Shortcuts Pt. 1"
 date: "2020-04-27"
 ---
 
-As developers, we spend a great deal of time in our text editors and terminals. Any boosts in efficiency with these tools has a direct impact on our productivity. Small gains with these tools add up over time and get us closer to feeling like our computers can respond immediately to our thoughts.
+As developers, we spend a great deal of time in our text editors and terminals. Any boost in efficiency with these tools has a direct impact on our productivity. Small gains with these tools add up over time and get us closer to feeling like our computers can respond immediately to our thoughts.
 
 This series of posts is primarily a way for me to store and reference some of the shell tricks and tips I've come across that I can never remember. I hope that they can be of some use to you as well. [^1] 
 
