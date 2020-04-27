@@ -964,6 +964,38 @@ video {
   text-decoration: underline;
 }
 
+/* Markdown Tables */
+
+.markdown td,
+.markdown th {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-width: 1px;
+  border-color: #cbd5e0;
+}
+
+.markdown th {
+  background-color: #102a43;
+  color: #d9e2ec;
+}
+
+.markdown tr:nth-child(odd) {
+  background-color: #f7fafc;
+}
+
+.markdown table {
+  margin-bottom: 1.5rem;
+}
+
+.markdown kbd {
+  border-radius: 5px;
+  padding: 5px;
+  background: #334e68;
+  color: #d9e2ec;
+}
+
 /* purgecss end ignore */
 
 .sr-only {
