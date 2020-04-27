@@ -27,7 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-smartypants`, `gatsby-remark-prismjs`],
+        plugins: [
+          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-smartypants`,
+            options: { dashes: "oldschool" },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -35,6 +41,12 @@ module.exports = {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve("./src/components/Layout.tsx"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-164726645-1",
       },
     },
     {
