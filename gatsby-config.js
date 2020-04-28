@@ -3,7 +3,7 @@ require("ts-node").register({ files: true })
 module.exports = {
   siteMetadata: {
     title: `Bikes & Bytes`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Personal blog for Will Harris, serving as a place to collect my thoughts about programming, technology, and bicycles.`,
     author: `Will Harris`,
   },
   plugins: [
