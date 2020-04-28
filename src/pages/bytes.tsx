@@ -26,15 +26,15 @@ const BytesPage = ({ data }: Props) => (
       <ul className="list-disc">
         {data &&
           data.allMarkdownRemark.nodes.map((post: any) => (
-            <li key={post.node.id} className="mb-8">
+            <li key={post.id} className="mb-8">
               <Link
-                to={post.node.frontmatter.path}
+                to={post.frontmatter.path}
                 className="text-2xl font-semibold hover:underline"
               >
-                {post.node.frontmatter.title}
+                {post.frontmatter.title}
               </Link>
               <p>
-                <em>{post.node.frontmatter.date}</em>
+                <em>{post.frontmatter.date}</em>
               </p>
             </li>
           ))}
