@@ -38,7 +38,7 @@ const ContactForm: FC = () => {
           </div>
           <div className="md:w-2/3">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-400 appearance-none border-2 border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600"
               id="name"
               name="name"
               type="text"
@@ -58,7 +58,7 @@ const ContactForm: FC = () => {
           </div>
           <div className="md:w-2/3">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-400 appearance-none border-2 border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600"
               id="email"
               name="email"
               type="text"
@@ -75,7 +75,7 @@ const ContactForm: FC = () => {
           </div>
           <div className="md:w-2/3">
             <textarea
-              className="rounded contact-input form-textarea w-full"
+              className="rounded contact-input form-textarea w-full border-2 border-gray-600"
               name="message"
               value={state.message}
               onChange={handleInputChange}
