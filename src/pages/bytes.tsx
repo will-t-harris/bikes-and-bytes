@@ -2,7 +2,21 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/SEO"
 
-const BytesPage = ({ data }) => (
+interface Props {
+  data: {
+    allMarkdownRemark: {
+      nodes: [
+        {
+          title: string
+          path: string
+          date: string
+        }
+      ]
+    }
+  }
+}
+
+const BytesPage = ({ data }: Props) => (
   <>
     <SEO title="Bytes" />
     <div className="flex flex-col text-col">
@@ -11,7 +25,7 @@ const BytesPage = ({ data }) => (
       </h1>
       <ul className="list-disc">
         {data &&
-          data.allMarkdownRemark.edges.map(post => (
+          data.allMarkdownRemark.nodes.map((post: any) => (
             <li key={post.node.id} className="mb-8">
               <Link
                 to={post.node.frontmatter.path}
@@ -38,15 +52,12 @@ export const bytesIndexQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { path: { regex: "/[/]/" } } }
     ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            path
-            date(formatString: "MMM Do YYYY")
-          }
-          excerpt(truncate: true, pruneLength: 60, format: HTML)
+      nodes {
+        id
+        frontmatter {
+          title
+          path
+          date(formatString: "MMM Do YYYY")
         }
       }
     }
