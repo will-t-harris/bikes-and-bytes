@@ -1,6 +1,10 @@
 import React from "react"
 
-const LinkedinIcon = ({ iconVisualTheme }) => (
+interface Props {
+  iconVisualTheme: string
+}
+
+const LinkedinIcon = ({ iconVisualTheme }: Props) => (
   <svg
     className={iconVisualTheme}
     height="56.693"
