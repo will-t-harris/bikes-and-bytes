@@ -29,6 +29,9 @@
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
     "gatsby-plugin-typescript": "^2.1.27",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0",
