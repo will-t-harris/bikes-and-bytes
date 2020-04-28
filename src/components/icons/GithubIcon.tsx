@@ -1,6 +1,10 @@
 import React from "react"
 
-const GithubIcon = ({ iconVisualTheme }) => (
+interface Props {
+  iconVisualTheme: string
+}
+
+const GithubIcon = ({ iconVisualTheme }: Props) => (
   <svg
     className={iconVisualTheme}
     height="56.693"

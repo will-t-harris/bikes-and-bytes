@@ -2,7 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
-const Post = ({ data }) => {
+interface Props {
+  data: {
+    markdownRemark: {
+      html: string
+      frontmatter: {
+        path: string
+        title: string
+      }
+    }
+  }
+}
+
+const Post = ({ data }: Props) => {
   const { markdownRemark } = data
   const title = markdownRemark.frontmatter.title
   const html = markdownRemark.html
