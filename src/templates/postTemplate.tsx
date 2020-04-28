@@ -14,7 +14,7 @@ interface Props {
   }
 }
 
-const Post = ({ data }) => {
+const Post = ({ data }: Props) => {
   const { markdownRemark } = data
   const title = markdownRemark.frontmatter.title
   const html = markdownRemark.html
