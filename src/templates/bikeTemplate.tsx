@@ -3,8 +3,22 @@ import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import SEO from "../components/SEO"
 
+interface Props {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title: string
+        description: string
+        bikeImage: {
+          childImageSharp: any
+        }
+      }
+    }
+  }
+}
+
 // define component for displaying a single bike
-const Bike = ({ data }) => {
+const Bike = ({ data }: Props) => {
   const { markdownRemark } = data
   const title = markdownRemark.frontmatter.title
   const description = markdownRemark.frontmatter.description
