@@ -1,6 +1,10 @@
 import React from "react"
 
-const InstagramIcon = ({ iconVisualTheme }) => (
+interface Props {
+  iconVisualTheme: string
+}
+
+const InstagramIcon = ({ iconVisualTheme }: Props) => (
   <svg className={iconVisualTheme} height="56.693" viewBox="0 0 56.7 56.7">
     <path d="M28.2 16.7c-7 0-12.8 5.7-12.8 12.8s5.7 12.8 12.8 12.8S41 36.5 41 29.5s-5.8-12.8-12.8-12.8zm0 21c-4.5 0-8.2-3.7-8.2-8.2s3.7-8.2 8.2-8.2 8.2 3.7 8.2 8.2-3.7 8.2-8.2 8.2z" />
     <circle cx="41.5" cy="16.4" r="2.9" />

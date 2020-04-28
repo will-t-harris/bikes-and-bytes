@@ -1,7 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const HeaderButton = ({ buttonTitle, buttonSlug, buttonClass }) => (
+interface Props {
+  buttonTitle: string
+  buttonSlug: string
+  buttonClass: string
+}
+
+const HeaderButton = ({ buttonTitle, buttonSlug, buttonClass }: Props) => (
   <>
     <div className="flex flex-auto">
       <Link to={buttonSlug} className={buttonClass}>
