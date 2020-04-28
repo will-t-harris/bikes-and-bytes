@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Will Harris",
   "dependencies": {
+    "@types/react-dom": "^16.9.7",
     "@types/react-helmet": "^5.0.15",
     "autoprefixer": "^9.7.4",
     "core-js": "^3",
