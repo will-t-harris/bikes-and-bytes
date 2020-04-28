@@ -1,17 +1,17 @@
-import React, { FC, useState } from "react"
+import React, { FC, useState, SyntheticEvent } from "react"
 
 const ContactForm: FC = () => {
   const [state, setState] = useState({ name: "", email: "", message: "" })
 
-  const handleInputChange = event => {
-    const target = event.target
+  const handleInputChange = (event: SyntheticEvent) => {
+    const target = event.target as HTMLInputElement
     const value = target.value
     const name = target.name
 
     setState({ ...state, [name]: value })
   }
 
-  const resetForm = event => {
+  const resetForm = (event: SyntheticEvent) => {
     event.preventDefault()
     setState({ ...state, name: "", email: "", message: "" })
   }
