@@ -1,6 +1,6 @@
 ---
 path: "/javascript-double-not-operator"
-title: "Double Not Operator in JavaScript"
+title: "JavaScript: Double Not Operator?"
 date: "2020-04-14"
 ---
 

@@ -17,28 +17,28 @@ const ContactForm: FC = () => {
   }
 
   return (
-    <div className="border border-blueGray-700">
+    <div className="border-t-8 border-b-8 border-blueGray-700">
       <form
         name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="w-full max-w-sm flex flex-col mx-auto"
+        className="w-full max-w-lg flex flex-col mx-auto"
       >
         <input type="hidden" name="form-name" value="contact" />
 
-        <div className="md:flex md:items-center my-6">
-          <div className="md:w-1/3">
+        <div className="md:grid md:grid-cols-6 md:grid-rows-1 my-6">
+          <div className="md:col-start-1 flex">
             <label
-              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              className="self-center text-gray-600 font-bold mb-1 md:mb-0 pr-4"
               htmlFor="name"
             >
               Name
             </label>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:col-start-2 md:col-span-5">
             <input
-              className="bg-gray-400 appearance-none border-2 border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600"
+              className="contact-input appearance-none border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight"
               id="name"
               name="name"
               type="text"
@@ -47,18 +47,18 @@ const ContactForm: FC = () => {
             />
           </div>
         </div>
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3">
+        <div className="md:grid md:grid-cols-6 md:grid-rows-1 mb-6">
+          <div className="md:col-start-1 flex">
             <label
-              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              className="self-center text-gray-600 font-bold mb-1 md:mb-0 pr-4"
               htmlFor="name"
             >
               Email
             </label>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:col-start-2 md:col-span-5">
             <input
-              className="bg-gray-400 appearance-none border-2 border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600"
+              className="contact-input appearance-none border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight"
               id="email"
               name="email"
               type="text"
@@ -67,15 +67,15 @@ const ContactForm: FC = () => {
             />
           </div>
         </div>
-        <div className="md:flex md:items-center">
-          <div className="md:w-1/3">
-            <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+        <div className="md:grid md:grid-cols-6 md:grid-rows-1">
+          <div className="md:col-start-1 flex">
+            <label className="self-center text-gray-600 font-bold mb-1 md:mb-0 pr-4">
               Message
             </label>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:col-start-2 md:col-span-5">
             <textarea
-              className="rounded contact-input form-textarea w-full border-2 border-gray-600"
+              className="rounded contact-input px-3 py-2 leading-normal w-full border-gray-600"
               name="message"
               value={state.message}
               onChange={handleInputChange}
@@ -83,19 +83,19 @@ const ContactForm: FC = () => {
             ></textarea>
           </div>
         </div>
-        <div className="flex justify-end mr-4">
+        <div className="grid grid-cols-6">
           <button
-            className="my-4 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
+            className="col-start-2 col-span-2 my-4 border-blueGray-900 border-2 px-8 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
             type="submit"
           >
-            Send
+            SEND
           </button>
           <div
-            className="my-4 ml-8 border-blueGray-900 border-2 px-4 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200"
+            className="col-start-5 col-span-2 my-4 border-blueGray-900 border-2 px-8 py-2 rounded hover:bg-blueGray-900 hover:text-gray-200 text-center"
             role="button"
             onClick={resetForm}
           >
-            Reset Form
+            RESET
           </div>
         </div>
       </form>

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import SEO from "../components/SEO"
 
 interface Props {
@@ -22,11 +22,26 @@ const Post = ({ data }: Props) => {
     <>
       <SEO title={title} />
       <div className="grid grid-cols-4">
-        <h1 className="pt-16 col-start-2 col-span-2 text-2xl font-semibold">
+        <h1 className="mt-12 mb-8 col-start-2 col-span-2 text-2xl font-black">
           {title}
         </h1>
+        <hr className="col-start-2 col-span-2 border-2 border-pink-600 rounded-sm" />
+
+        <Link
+          to="/"
+          className="col-start-3 ml-auto mt-6 font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+        >
+          Home
+        </Link>
+        <Link
+          to="/bytes"
+          className="col-start-3 ml-auto mt-3 font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+        >
+          Other Posts
+        </Link>
+
         <div
-          className="markdown my-10 col-start-2 col-span-2 leading-8"
+          className="markdown mt-6 col-start-2 col-span-2 leading-8"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>

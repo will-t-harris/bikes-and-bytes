@@ -5,6 +5,7 @@
 
 .about-text {
   @apply mt-10 col-start-2 col-end-4 font-serif font-semibold text-lg;
+  opacity: 0.87;
 }
 
 .text-col {
@@ -13,7 +14,7 @@
 
 /* Contact Inputs */
 .contact-input {
-  @apply bg-gray-400;
+  @apply bg-gray-400 text-base border-2;
 }
 
 .contact-input:hover {
@@ -21,7 +22,7 @@
 }
 
 .contact-input:focus {
-  @apply outline-none bg-white shadow-outline border-gray-300;
+  @apply outline-none bg-white border-pink-600;
 }
 
 /* Header Buttons */
