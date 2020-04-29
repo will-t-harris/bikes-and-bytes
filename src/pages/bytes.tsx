@@ -20,9 +20,9 @@ const BytesPage = ({ data }: Props) => (
   <>
     <SEO title="Bytes" />
     <div className="flex flex-col text-col">
-      <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold">
-        Bytes
-      </h1>
+      <hr className="mt-20 border-blueGray-900" />
+      <hr className="border-blueGray-900" />
+      <hr className="mb-20 border-blueGray-900" />
       <ul className="list-disc">
         {data &&
           data.allMarkdownRemark.nodes.map((post: any) => (
