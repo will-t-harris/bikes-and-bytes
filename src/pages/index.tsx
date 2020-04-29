@@ -5,12 +5,14 @@ import SEO from "../components/SEO"
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <div className="grid grid-cols-4 py-10">
+    <article className="grid grid-cols-4 py-10">
       <h1 className="col-start-2 col-end-4 font-mono text-4xl text-gray-900 font-bold">
         <Typewriter />
       </h1>
       <p className="about-text">
-        I'm a developer currently living in San Francisco.{" "}
+        I'm a developer currently living in San Francisco. This website is
+        intended as a place to collect my thoughts about programming,
+        technology, and my growing quiver of bicycles. 🙂
       </p>
       <p className="about-text">
         I'm interested in open source software, online privacy, cryptography,
@@ -21,7 +23,7 @@ const IndexPage = () => (
         I'm happiest bumping along on a dirt road on a sunny day in the middle
         of nowhere carrying all that I need on my bike.
       </p>
-    </div>
+    </article>
   </>
 )
 
