@@ -10,7 +10,11 @@ interface Props {
 const HeaderButton = ({ buttonTitle, buttonSlug, buttonClass }: Props) => (
   <>
     <div className="flex flex-auto">
-      <Link to={buttonSlug} className={buttonClass}>
+      <Link
+        to={buttonSlug}
+        className={buttonClass}
+        activeClassName="text-pink-600 underline transition-all ease-in duration-200"
+      >
         {buttonTitle}
       </Link>
     </div>
