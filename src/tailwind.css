@@ -4,7 +4,8 @@
 @tailwind components;
 
 .about-text {
-  @apply mt-10 col-start-2 col-end-4 font-serif font-semibold text-lg opacity-75;
+  @apply mt-10 col-start-2 col-end-4 font-serif font-semibold text-lg;
+  opacity: 0.87;
 }
 
 .text-col {

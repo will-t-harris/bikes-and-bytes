@@ -2,7 +2,7 @@ require("ts-node").register({ files: true })
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const { data } = await graphql(`
-    {
+    query {
       allMarkdownRemark {
         nodes {
           frontmatter {
