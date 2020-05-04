@@ -39,6 +39,11 @@
   @apply mb-0;
 }
 
+/* Markdown Headings */
+.markdown h2 {
+  @apply text-2xl my-6 font-bold;
+}
+
 /* Markdown Paragraphs */
 .markdown p {
   @apply mb-4;

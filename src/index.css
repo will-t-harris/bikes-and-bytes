@@ -693,6 +693,15 @@ video {
   margin-bottom: 0;
 }
 
+/* Markdown Headings */
+
+.markdown h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
 /* Markdown Paragraphs */
 
 .markdown p {
