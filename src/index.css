@@ -693,6 +693,15 @@ video {
   margin-bottom: 0;
 }
 
+/* Markdown Headings */
+
+.markdown h2 {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
 /* Markdown Paragraphs */
 
 .markdown p {
@@ -739,6 +748,13 @@ video {
   padding: 5px;
   background: #334e68;
   color: #d9e2ec;
+}
+
+/* Markdown Prism Code Blocks */
+
+.markdown .gatsby-highlight {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* purgecss end ignore */

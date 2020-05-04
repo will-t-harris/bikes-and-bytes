@@ -39,6 +39,11 @@
   @apply mb-0;
 }
 
+/* Markdown Headings */
+.markdown h2 {
+  @apply text-2xl my-16 font-bold;
+}
+
 /* Markdown Paragraphs */
 .markdown p {
   @apply mb-4;
@@ -76,6 +81,11 @@
   padding: 5px;
   background: #334e68;
   color: #d9e2ec;
+}
+
+/* Markdown Prism Code Blocks */
+.markdown .gatsby-highlight {
+  @apply my-16;
 }
 
 /* purgecss end ignore */
