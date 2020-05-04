@@ -8,8 +8,6 @@ In a [previous post](https://www.bikesandbytes.net/check-for-array-duplicates) w
 
 [^1]:
 
-  I found these resources helpful in researching different methods for this post:
-
   https://medium.com/dailyjs/how-to-remove-array-duplicates-in-es6-5daa8789641c
   https://stackoverflow.com/questions/9229645/remove-duplicate-values-from-js-array/9229821#9229821
 

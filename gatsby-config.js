@@ -18,29 +18,9 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/data/bikes/`,
-        name: `bikes`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/data/blog/`,
-        name: `blog`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-prismjs`,
-          {
-            resolve: `gatsby-remark-smartypants`,
-            options: { dashes: "oldschool" },
-          },
-        ],
+        plugins: [`gatsby-remark-prismjs`],
       },
     },
     `gatsby-transformer-sharp`,
@@ -55,6 +35,21 @@ module.exports = {
       options: {
         tailwind: true,
         ignore: ["prismjs/themes/prism-okaidia.css"],
+      },
+    },
+    // Sources
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/bikes/`,
+        name: `bikes`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/blog/`,
+        name: `blog`,
       },
     },
   ],
