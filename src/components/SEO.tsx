@@ -2,6 +2,9 @@ import React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import favicon16 from "../../data/assets/favicon-16x16.png"
+import favicon32 from "../../data/assets/favicon-32x32.png"
+
 interface Props {
   description?: string
   lang?: string
@@ -34,6 +37,20 @@ function SEO({ description, lang, meta, title }: Props) {
       bodyAttributes={{ className: "flex flex-col min-h-screen" }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: `${favicon16}`,
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: `${favicon32}`,
+        },
+      ]}
       meta={[
         {
           name: `description`,
