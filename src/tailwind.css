@@ -44,6 +44,10 @@
   @apply text-2xl my-16 font-bold;
 }
 
+.markdown h3 {
+  @apply text-xl my-8 font-bold;
+}
+
 /* Markdown Paragraphs */
 .markdown p {
   @apply mb-4;
