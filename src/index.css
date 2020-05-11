@@ -741,6 +741,8 @@ video {
 
 .markdown table {
   margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .markdown kbd {

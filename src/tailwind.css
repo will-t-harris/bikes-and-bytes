@@ -73,7 +73,7 @@
 }
 
 .markdown table {
-  @apply mb-6;
+  @apply mb-6 mx-auto;
 }
 
 .markdown kbd {
