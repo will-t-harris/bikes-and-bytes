@@ -61,14 +61,14 @@ The <kbd>Ctrl</kbd> + <kbd>W</kbd> and <kbd>Alt</kbd> + <kbd>D</kbd> commands bu
 
 ## Controlling the terminal
 
-| Action                                     | Shortcut                       | Equivalent Command |
-| ------------------------------------------ | ------------------------------ | ------------------ |
-| Clear terminal screen                      | <kbd>Ctrl</kbd> + <kbd>L</kbd> | `clear`            |
-| Close terminal screen / tab                | <kbd>Ctrl</kbd> + <kbd>D</kbd> | `exit`             |
-| Stop current job                           | <kbd>Ctrl</kbd> + <kbd>Z</kbd> |                    |
-| Restart stopped job and send to foreground |                                | `fg`               |
-| Restart stopped job and send to background |                                | `bg`               |
-| List running and stopped jobs              |                                | `jobs`             |
+| Action                                     | Shortcut                       | Command |
+| ------------------------------------------ | ------------------------------ | ------- |
+| Clear terminal screen                      | <kbd>Ctrl</kbd> + <kbd>L</kbd> | `clear` |
+| Close terminal screen / tab                | <kbd>Ctrl</kbd> + <kbd>D</kbd> | `exit`  |
+| Stop current job                           | <kbd>Ctrl</kbd> + <kbd>Z</kbd> |         |
+| Restart stopped job and send to foreground |                                | `fg`    |
+| Restart stopped job and send to background |                                | `bg`    |
+| List running and stopped jobs              |                                | `jobs`  |
 
 One nice shortcut for starting a program and immediately sending it to the background is the `&` operator. For example, the following command would start firefox and send the job to the background of the current terminal instance.
 
