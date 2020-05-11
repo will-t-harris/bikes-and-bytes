@@ -58,6 +58,16 @@
   @apply underline;
 }
 
+/* Markdown Unordered List Items */
+.markdown ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.markdown ul li:last-child {
+  @apply mb-4;
+}
+
 /* Markdown Tables */
 .markdown td,
 .markdown th {
@@ -86,6 +96,16 @@
 /* Markdown Prism Code Blocks */
 .markdown .gatsby-highlight {
   @apply my-16;
+}
+
+/* Markdown Horizontal Rule */
+.markdown hr {
+  @apply border-2 border-gray-700 mb-4;
+}
+
+/* Markdown Footnotes */
+.markdown li[id|="fn"] p {
+  @apply text-sm;
 }
 
 /* purgecss end ignore */
