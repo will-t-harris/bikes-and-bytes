@@ -718,6 +718,17 @@ video {
   text-decoration: underline;
 }
 
+/* Markdown Unordered List Items */
+
+.markdown ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.markdown ul li:last-child {
+  margin-bottom: 1rem;
+}
+
 /* Markdown Tables */
 
 .markdown td,
@@ -741,6 +752,8 @@ video {
 
 .markdown table {
   margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .markdown kbd {
@@ -755,6 +768,20 @@ video {
 .markdown .gatsby-highlight {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+/* Markdown Horizontal Rule */
+
+.markdown hr {
+  border-width: 2px;
+  border-color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* Markdown Footnotes */
+
+.markdown li[id|="fn"] p {
+  font-size: 0.875rem;
 }
 
 /* purgecss end ignore */
