@@ -29,13 +29,13 @@ const Post = ({ data }: Props) => {
 
         <Link
           to="/"
-          className="col-start-3 ml-auto mt-6 font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+          className="col-start-2 mt-6 font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
         >
           Home
         </Link>
         <Link
           to="/bytes"
-          className="col-start-3 ml-auto mt-3 font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+          className="col-start-2 mt-3 font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
         >
           Other Posts
         </Link>
