@@ -36,8 +36,6 @@ Both shells allow for customizing different aspects of the `$HISTFILE` such as t
 
 We don't want to get too bogged down in the nitty-gritty of the `$HISTFILE` in this post, but suffice it to say that the shell offers granular control over how exactly the history file functions, should you need to customize some aspect of it to better suit your needs.
 
-------
-
 ## Searching the history
 
 Getting back to navigating through the shell's history, the <kbd>↑</kbd> and <kbd>↓</kbd> keys are only one of the methods available to us. These shortcuts can be super useful if what you're looking for was only a few commands back, but what if you want to find that crazy `cat | grep` you were using last week? You could just hold down the  <kbd>↑</kbd> key and hope that you find it eventually[^1], but there's a better way!
@@ -85,6 +83,6 @@ Note that in `zsh` you may need to add the `setopt HIST_IGNORE_SPACE` option in 
 
 ------
 
-Whew! Another information dump about the unix shell, this time focusing on how the shell's history works. 
+I didn't include any discussion of the Windows command line or power shell, as I am not a Windows user and the Windows command line operates differently than on unix systems. 
 
-Note that I didn't include any discussion of the Windows command line or power shell, as I am not a Windows user and the Windows command line operates differently than on unix systems. If anyone has any good resources for learning the Windows command line, I'd be happy to include them here.
+If anyone has any good resources for learning the Windows command line, I'd be happy to include them here.
