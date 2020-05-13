@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
+
 import SEO from "../components/SEO"
 
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
       frontmatter: {
         title: string
         description: string
+        path: string
         bikeImage: {
           childImageSharp: any
         }
@@ -19,13 +21,17 @@ interface Props {
 
 // define component for displaying a single bike
 const Bike = ({ data }: Props) => {
-  const { markdownRemark } = data
-  const title = markdownRemark.frontmatter.title
-  const description = markdownRemark.frontmatter.description
-  const bikeImage = markdownRemark.frontmatter.bikeImage.childImageSharp.fixed
+  const {
+    markdownRemark: { frontmatter },
+  } = data
+  const title = frontmatter.title
+  const description = frontmatter.description
+  const bikeImage = frontmatter.bikeImage.childImageSharp.fixed
+  const pathname = `/${frontmatter.path}`
+
   return (
     <>
-      <SEO title={title} />
+      <SEO title={title} pathname={pathname} />
       <h1 className="text-center">{title}</h1>
       <div className="mx-auto max-w-xl">
         <Image fixed={bikeImage} />
@@ -49,6 +55,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        slug
         bikeImage {
           childImageSharp {
             fixed {

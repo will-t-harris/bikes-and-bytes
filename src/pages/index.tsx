@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Typewriter from "../components/TypeWriter"
@@ -17,23 +17,23 @@ interface Props {
         }
       ]
     }
+    sitePage: {
+      path: string
+    }
   }
 }
 
 const IndexPage = ({ data }: Props) => {
-  const {
-    allFile: { nodes },
-  } = data
+  const nodes = data.allFile.nodes
+  // Path to most recent blog post
+  const path = nodes[0].childMarkdownRemark.frontmatter.path
 
-  const {
-    childMarkdownRemark: {
-      frontmatter: { path },
-    },
-  } = nodes[0]
+  // Path to current page for SEO component
+  const pathname = data.sitePage.path
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" pathname={pathname} />
       <article className="grid grid-cols-4 py-10 mb-20">
         <h1 className="col-start-2 col-end-4 font-mono text-4xl text-blueGray-900 font-bold">
           <Typewriter />
@@ -81,6 +81,9 @@ export const query = graphql`
           }
         }
       }
+    }
+    sitePage(component: { regex: "/index/" }, id: { eq: "SitePage /" }) {
+      path
     }
   }
 `

@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+
 import SEO from "../components/SEO"
 
 interface Props {
@@ -24,7 +25,7 @@ const Post = ({ data }: Props) => {
 
   return (
     <>
-      <SEO title={title} pathname={`${pathname}`} description={excerpt} />
+      <SEO title={title} pathname={pathname} description={excerpt} />
       <div className="grid grid-cols-4">
         <h1 className="mt-12 mb-8 col-start-2 col-span-2 text-2xl font-black">
           {title}
