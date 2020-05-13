@@ -10,9 +10,10 @@ interface Props {
   lang?: string
   meta?: []
   title: string
+  pathname: string
 }
 
-function SEO({ description, lang, meta, title }: Props) {
+function SEO({ description, lang, meta, title, pathname }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +22,7 @@ function SEO({ description, lang, meta, title }: Props) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -28,29 +30,51 @@ function SEO({ description, lang, meta, title }: Props) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      bodyAttributes={{ className: "flex flex-col min-h-screen" }}
+      bodyAttributes={{ className: "flex flex-col min-h-full" }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={[
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "16x16",
-          href: `${favicon16}`,
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "32x32",
-          href: `${favicon32}`,
-        },
-      ]}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+              {
+                rel: "icon",
+                type: "image/png",
+                sizes: "16x16",
+                href: `${favicon16}`,
+              },
+              {
+                rel: "icon",
+                type: "image/png",
+                sizes: "32x32",
+                href: `${favicon32}`,
+              },
+            ]
+          : [
+              {
+                rel: "icon",
+                type: "image/png",
+                sizes: "16x16",
+                href: `${favicon16}`,
+              },
+              {
+                rel: "icon",
+                type: "image/png",
+                sizes: "32x32",
+                href: `${favicon32}`,
+              },
+            ]
+      }
       meta={[
         {
           name: `description`,
