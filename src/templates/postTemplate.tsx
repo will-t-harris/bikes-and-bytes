@@ -1,11 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+
 import SEO from "../components/SEO"
 
 interface Props {
   data: {
     markdownRemark: {
       html: string
+      excerpt: string
       frontmatter: {
         path: string
         title: string
@@ -18,9 +20,12 @@ const Post = ({ data }: Props) => {
   const { markdownRemark } = data
   const title = markdownRemark.frontmatter.title
   const html = markdownRemark.html
+  const pathname = markdownRemark.frontmatter.path
+  const excerpt = markdownRemark.excerpt
+
   return (
     <>
-      <SEO title={title} />
+      <SEO title={title} pathname={pathname} description={excerpt} />
       <div className="grid grid-cols-4">
         <h1 className="mt-12 mb-8 col-start-2 col-span-2 text-2xl font-black">
           {title}
@@ -55,6 +60,7 @@ export const postQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         path
         title

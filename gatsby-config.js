@@ -3,8 +3,9 @@ require("ts-node").register({ files: true })
 module.exports = {
   siteMetadata: {
     title: `Bikes & Bytes`,
-    description: `Personal blog for Will Harris, serving as a place to collect my thoughts about programming, technology, and bicycles.`,
+    description: `Will Harris' personal blog. A corner of the internet to collect my thoughts about programming, technology, and bicycles.`,
     author: `Will Harris`,
+    siteUrl: `https://www.bikesandbytes.net`,
   },
   plugins: [
     {
