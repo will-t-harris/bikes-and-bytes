@@ -6,17 +6,6 @@ import SEO from "../components/SEO"
 
 interface Props {
   data: {
-    allFile: {
-      nodes: [
-        {
-          childMarkdownRemark: {
-            frontmatter: {
-              path: string
-            }
-          }
-        }
-      ]
-    }
     sitePage: {
       path: string
     }
@@ -24,10 +13,6 @@ interface Props {
 }
 
 const IndexPage = ({ data }: Props) => {
-  const nodes = data.allFile.nodes
-  // Path to most recent blog post
-  const path = nodes[0].childMarkdownRemark.frontmatter.path
-
   // Path to current page for SEO component
   const pathname = data.sitePage.path
 
@@ -55,10 +40,10 @@ const IndexPage = ({ data }: Props) => {
       </article>
       <div className="flex bg-blueGray-900 text-gray-200 rounded-lg mx-auto shadow-2xl border-4 border-pink-600 w-64 h-16 hover:text-gray-200 hover:bg-blueGray-900 transition-colors duration-500">
         <Link
-          to={path}
+          to="/bytes"
           className="font-extrabold hover:text-pink-400 transition-colors duration-300 pt-4 pl-10 w-64 h-16"
         >
-          LATEST BLOG POST
+          LATEST BLOG POSTS
         </Link>
       </div>
     </>
@@ -68,20 +53,7 @@ const IndexPage = ({ data }: Props) => {
 export default IndexPage
 
 export const query = graphql`
-  query latestPostQuery {
-    allFile(
-      filter: { sourceInstanceName: { eq: "blog" } }
-      limit: 1
-      sort: { fields: birthTime, order: DESC }
-    ) {
-      nodes {
-        childMarkdownRemark {
-          frontmatter {
-            path
-          }
-        }
-      }
-    }
+  query IndexPageQuery {
     sitePage(component: { regex: "/index/" }, id: { eq: "SitePage /" }) {
       path
     }

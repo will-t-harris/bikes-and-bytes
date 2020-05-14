@@ -50,7 +50,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "tailwind:css": "tailwind build src/tailwind.css -c tailwind.config.js -o src/index.css",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc"
   },
   "repository": {
     "type": "git",
