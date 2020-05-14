@@ -112,6 +112,11 @@
   @apply text-sm;
 }
 
+/* Markdown Inline Code Element */
+.markdown code[class|="language-text"] {
+  @apply px-2;
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;
