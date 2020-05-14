@@ -55,10 +55,10 @@ const IndexPage = ({ data }: Props) => {
       </article>
       <div className="flex bg-blueGray-900 text-gray-200 rounded-lg mx-auto shadow-2xl border-4 border-pink-600 w-64 h-16 hover:text-gray-200 hover:bg-blueGray-900 transition-colors duration-500">
         <Link
-          to={path}
+          to="/bytes"
           className="font-extrabold hover:text-pink-400 transition-colors duration-300 pt-4 pl-10 w-64 h-16"
         >
-          LATEST BLOG POST
+          LATEST BLOG POSTS
         </Link>
       </div>
     </>
