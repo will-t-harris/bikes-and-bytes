@@ -819,6 +819,13 @@ video {
   font-size: 0.875rem;
 }
 
+/* Markdown Inline Code Element */
+
+.markdown code[class|="language-text"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 /* purgecss end ignore */
 
 .space-y-0 > :not(template) ~ :not(template) {
