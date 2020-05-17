@@ -19,20 +19,20 @@ const IndexPage = ({ data }: Props) => {
   return (
     <>
       <SEO title="Home" pathname={pathname} />
-      <article className="grid grid-cols-4 py-10 mb-20">
+      <article className="grid grid-cols-4 py-10 mb-10">
         <h1 className="col-start-2 col-end-4 font-mono text-4xl text-blueGray-900 font-bold">
           <Typewriter />
         </h1>
-        <p className="about-text">
+        <p className="about-text w-full lg:w-3/4 mx-auto">
           I'm a developer currently living in San Francisco. This website is
           intended as a place to collect my thoughts about programming,
           technology, and my growing quiver of bicycles. 🙂
         </p>
-        <p className="about-text">
+        <p className="about-text w-full lg:w-3/4 mx-auto">
           I'm interested in open source software, online privacy, cryptography,
           and security.
         </p>
-        <p className="about-text">
+        <p className="about-text w-full lg:w-3/4 mx-auto">
           I'm passionate about bikes--I think they make the world a better
           place. I'm happiest bumping along on a dirt road on a sunny day in the
           middle of nowhere carrying all that I need on my bike.
