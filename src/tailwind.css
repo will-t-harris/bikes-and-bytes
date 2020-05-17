@@ -41,7 +41,7 @@
 
 /* Markdown Headings */
 .markdown h2 {
-  @apply text-2xl my-16 font-bold;
+  @apply text-2xl my-12 font-bold;
 }
 
 .markdown h3 {
