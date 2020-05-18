@@ -4,7 +4,7 @@ title: "React: JSX Basics"
 date: "2020-05-18"
 ---
 
-Over the last year I've been on a mission to learn modern JavaScript. Much of the language has changed and improved since my initial exposure to it, and I've found no shortage of things to explore. I've also landed on React as my front-end framework of choice and have really been enjoying the experience.
+Over the last year, I've been on a mission to learn modern JavaScript. Much of the language has changed and improved since my initial exposure to it, and I've found no shortage of things to explore. I've also landed on React as my front-end framework of choice and have really been enjoying the experience.
 
 For some time I've wanted to set down and think through the different basic building blocks of React, so this will be the first of many posts covering React fundamentals as I understand them.
 
@@ -22,9 +22,9 @@ Let's look at the most basic example of JSX:
 let greeting = <h1 className="greeting">Hello, world!</h1>;
 ```
 
-Clearly this is not normal HTML or JavaScript! If we run this code in a normal JavaScript file it will immediately throw a `SyntaxError` at the `<` because this isn't valid JavaScript!
+Clearly, this is not normal HTML or JavaScript! If we run this code in a normal JavaScript file it will immediately throw a `SyntaxError` at the `<` because this isn't valid JavaScript!
 
-Under the hood the JSX gets 'translated' into regular JavaScript at runtime with a tool called [Babel](https://babeljs.io/docs/en/).
+Under the hood, the JSX gets 'translated' into regular JavaScript at runtime with a tool called [Babel](https://babeljs.io/docs/en/).
 
 > An explanation of Babel is beyond the scope of this post, but their documentation is excellent if you'd like to learn more!
 
@@ -32,9 +32,9 @@ The same statement after this 'translation' step looks like this:
 
 ```jsx
 let greeting = React.createElement(
-	"h1",
-	{ className: "greeting" },
-	"Hello, world!"
+  "h1",
+  { className: "greeting" },
+  "Hello, world!"
 );
 ```
 
@@ -56,15 +56,15 @@ let randomNumber = Math.floor(Math.random() * 100);
 
 We can wrap any JavaScript expression in curly braces inline in our JSX and it will be translated into whatever value the expression evaluates to at runtime.
 
-After compilation, JSX is translated into normal JavaScript function calls which evaluate to JavaScript objects. This means that we can use JSX statements anywhere that we normally use JavaScript statements (if/else statments, switch statements, loops, variables, etc).
+After compilation, JSX is translated into normal JavaScript function calls which evaluate to JavaScript objects. This means that we can use JSX statements anywhere that we normally use JavaScript statements (if/else statements, switch statements, loops, variables, etc).
 
 ```jsx
 let randomNumber = Math.floor(Math.random() * 100);
 
 if (randomNumber < 75) {
-	return (
-		<p>Your random number {randomNumber} is pretty low, try again later!</p>
-	);
+  return (
+    <p>Your random number {randomNumber} is pretty low, try again later!</p>
+  );
 }
 return <p>Your random number {randomNumber} is over 75!</p>;
 ```
@@ -79,7 +79,7 @@ We can also use JSX to set HTML attributes, allowing us to use dynamic values as
 let element = <img src={userImage} />;
 ```
 
-> Because this element doesn't have any _children_, we can self-close the tag like we can in an XML document
+> Because this element doesn't have any _children_, we can self-close the tag as we can in an XML document
 
 In practice, when we use this `element`, we can render different images depending on the `useImage` value passed into the `src` attribute. This allows us to _reuse the same element with different values_, providing flexibility and reusability in our code. The `useImage` value could come from anywhere in our application -- an HTTP request, user input, etc. Our JSX is the same, it is only concerned with rendering the final value.
 
@@ -89,19 +89,19 @@ JSX tags can also contain children, just like HTML elements:
 
 ```jsx
 let element = (
-	<div>
-		<h1>This is a nested heading!</h1>
-		<p>We can nest as many children as needed!</p>
-		<div>
-			<ul>
-				<li>Turtles</li>
-				<li>All</li>
-				<li>The</li>
-				<li>Way</li>
-				<li>Down!</li>
-			</ul>
-		</div>
-	</div>
+  <div>
+    <h1>This is a nested heading!</h1>
+    <p>We can nest as many children as needed!</p>
+    <div>
+      <ul>
+        <li>Turtles</li>
+        <li>All</li>
+        <li>The</li>
+        <li>Way</li>
+        <li>Down!</li>
+      </ul>
+    </div>
+  </div>
 );
 ```
 
