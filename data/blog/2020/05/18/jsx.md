@@ -91,7 +91,7 @@ JSX tags can also contain children, just like HTML elements:
 let element = (
   <div>
     <h1>This is a nested heading!</h1>
-    <p>We can nest as many children as needed!</p>
+    <p>We can nest as many children as we want!</p>
     <div>
       <ul>
         <li>Turtles</li>
