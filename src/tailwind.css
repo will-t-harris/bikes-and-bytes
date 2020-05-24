@@ -3,8 +3,7 @@
 
 @tailwind components;
 
-.about-text {
-  @apply mt-10 col-start-2 col-end-4 font-serif font-semibold text-lg;
+.content-text {
   opacity: 0.87;
 }
 
@@ -41,21 +40,21 @@
 
 /* Markdown Headings */
 .markdown h2 {
-  @apply text-2xl my-12 font-bold;
+  @apply text-2xl my-12 font-bold font-roboto-slab;
 }
 
 .markdown h3 {
-  @apply text-xl my-8 font-bold;
+  @apply text-xl my-8 font-bold font-roboto-slab;
 }
 
 /* Markdown Paragraphs */
 .markdown p {
-  @apply mb-4;
+  @apply mb-4 font-open-sans;
 }
 
 /* Markdown Links */
 .markdown a {
-  @apply text-green-700;
+  @apply text-pink-600;
 }
 
 .markdown a:hover {

@@ -5,7 +5,7 @@ const HomeTypeWriter = () => {
   return (
     <Typewriter
       onInit={typewriter => {
-        typewriter.typeString("Hi, I'm Will Harris.").start()
+        typewriter.typeString("Hi, I'm Will.").start()
       }}
     />
   )

@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   theme: {
     extend: {
@@ -11,6 +13,10 @@ module.exports = {
         "blueGray-300": "#9fb3c8",
         "blueGray-200": "#bcccdc",
         "blueGray-100": "#d9e2ec",
+      },
+      fontFamily: {
+        "roboto-slab": ["roboto slab", ...defaultTheme.fontFamily.sans],
+        "open-sans": ["open sans", ...defaultTheme.fontFamily.sans],
       },
     },
   },

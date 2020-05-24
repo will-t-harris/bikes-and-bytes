@@ -19,7 +19,7 @@ It is worth noting that JSX is not a requirement for using React: you can do eve
 Let's look at the most basic example of JSX:
 
 ```jsx
-let greeting = <h1 className="greeting">Hello, world!</h1>;
+let greeting = <h1 className="greeting">Hello, world!</h1>
 ```
 
 Clearly, this is not normal HTML or JavaScript! If we run this code in a normal JavaScript file it will immediately throw a `SyntaxError` at the `<` because this isn't valid JavaScript!
@@ -35,7 +35,7 @@ let greeting = React.createElement(
   "h1",
   { className: "greeting" },
   "Hello, world!"
-);
+)
 ```
 
 Note that because React does all the heavy lifting of turning our JSX into `React.createElement` calls, React must always be in scope from our JSX code.
@@ -49,9 +49,9 @@ It can be helpful to think of curly braces in JSX as indicating to React that we
 Imagine that we have an element of an application that displays a random number between 0 and 100 every time a user visits the website. Using JSX we can do something like this:
 
 ```jsx
-let randomNumber = Math.floor(Math.random() * 100);
+let randomNumber = Math.floor(Math.random() * 100)
 
-<p>Your random number is: {randomNumber}</p>;
+<p>Your random number is: {randomNumber}</p>
 ```
 
 We can wrap any JavaScript expression in curly braces inline in our JSX and it will be translated into whatever value the expression evaluates to at runtime.
@@ -59,14 +59,14 @@ We can wrap any JavaScript expression in curly braces inline in our JSX and it w
 After compilation, JSX is translated into normal JavaScript function calls which evaluate to JavaScript objects. This means that we can use JSX statements anywhere that we normally use JavaScript statements (if/else statements, switch statements, loops, variables, etc).
 
 ```jsx
-let randomNumber = Math.floor(Math.random() * 100);
+let randomNumber = Math.floor(Math.random() * 100)
 
 if (randomNumber < 75) {
   return (
     <p>Your random number {randomNumber} is pretty low, try again later!</p>
-  );
+  )
 }
-return <p>Your random number {randomNumber} is over 75!</p>;
+return <p>Your random number {randomNumber} is over 75!</p>
 ```
 
 These examples abstract away a lot of markup related to components in React, which I'll cover in a future post, but for now I just want to show how to embed simple expressions into JSX statements.
@@ -76,7 +76,7 @@ These examples abstract away a lot of markup related to components in React, whi
 We can also use JSX to set HTML attributes, allowing us to use dynamic values as attributes on HTML elements. Let's look at an example:
 
 ```jsx
-let element = <img src={userImage} />;
+let element = <img src={userImage} />
 ```
 
 > Because this element doesn't have any _children_, we can self-close the tag as we can in an XML document
@@ -102,10 +102,10 @@ let element = (
       </ul>
     </div>
   </div>
-);
+)
 ```
 
-> We wrap this JSX in parentheses to avoid issues with [automatic semicolon insertion (ASI)](https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi))
+> We wrap this JSX in parentheses to avoid issues with [automatic semicolon insertion (ASI)](https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi)
 
 We can also use JavaScript anywhere in this hierarchy of children, just like with any other JSX element. Again, this unlocks some really powerful stuff in practice!
 
