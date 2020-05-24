@@ -51,7 +51,7 @@ Imagine that we have an element of an application that displays a random number 
 ```jsx
 let randomNumber = Math.floor(Math.random() * 100)
 
-;<p>Your random number is: {randomNumber}</p>
+<p>Your random number is: {randomNumber}</p>
 ```
 
 We can wrap any JavaScript expression in curly braces inline in our JSX and it will be translated into whatever value the expression evaluates to at runtime.
