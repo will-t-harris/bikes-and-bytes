@@ -26,12 +26,12 @@ const Post = ({ data }: Props) => {
   return (
     <>
       <SEO title={title} pathname={pathname} description={excerpt} />
-      <div className="grid grid-cols-4">
-        <h1 className="mt-12 mb-6 col-start-2 col-span-2 text-2xl font-black">
+      <div className="flex flex-col lg:grid lg:grid-cols-4">
+        <h1 className="mx-auto py-6 text-4xl font-black lg:py-12 lg:col-start-2 lg:col-span-2">
           {title}
         </h1>
-        <hr className="col-start-2 col-span-2 border-2 border-pink-600 rounded-sm" />
-        <div className="col-start-2 mt-4">
+        <hr className="mb-6 col-start-2 col-span-2 border-2 border-pink-600 rounded-sm" />
+        <div className="mx-auto lg:mx-0 mb-4 lg:col-start-2">
           <Link
             to="/"
             className="mr-3 font-semibold opacity-75 hover:underline hover:text-pink-600 transition ease-in-out duration-75"
@@ -47,7 +47,7 @@ const Post = ({ data }: Props) => {
         </div>
 
         <div
-          className="markdown mt-4 col-start-2 col-span-2 leading-8"
+          className="markdown mx-8 lg:mx-0 col-start-2 col-span-2 leading-8 content-text text-lg"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
