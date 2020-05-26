@@ -49,7 +49,7 @@ export default BikesPage
 
 export const query = graphql`
   query BikePageQuery {
-    sitePage(component: { regex: "/bike/" }, id: { eq: "SitePage /bike/" }) {
+    sitePage(component: { regex: "/bikes/" }, id: { eq: "SitePage /bikes/" }) {
       path
     }
   }
