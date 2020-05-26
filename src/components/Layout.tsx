@@ -12,7 +12,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="flex-1 bg-gray-200 text-blueGray-800 min-h-screen">
+      <main className="flex-1 bg-bodyBackground text-white min-h-screen">
         {children}
       </main>
       <Footer />

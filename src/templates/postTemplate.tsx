@@ -30,17 +30,17 @@ const Post = ({ data }: Props) => {
         <h1 className="mx-auto py-6 text-4xl font-black lg:py-12 lg:col-start-2 lg:col-span-2">
           {title}
         </h1>
-        <hr className="mb-6 col-start-2 col-span-2 border-2 border-pink-600 rounded-sm" />
+        <hr className="mb-6 col-start-2 col-span-2 border-2 border-accent rounded-sm" />
         <div className="mx-auto lg:mx-0 mb-4 lg:col-start-2">
           <Link
             to="/"
-            className="mr-3 font-semibold opacity-75 hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+            className="mr-3 font-semibold opacity-75 hover:underline hover:text-accent transition ease-in-out duration-75"
           >
             Home
           </Link>
           <Link
             to="/bytes"
-            className="font-semibold opacity-75 hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+            className="font-semibold opacity-75 hover:underline hover:text-accent transition ease-in-out duration-75"
           >
             Other Posts
           </Link>

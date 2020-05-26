@@ -6,10 +6,10 @@ import LinkedinIcon from "./icons/LinkedinIcon"
 
 const Footer = () => {
   const iconVisualTheme =
-    "fill-current text-gray-400 hover:text-pink-600 transition ease-in-out duration-150"
+    "fill-current text-gray-400 hover:text-accent transition ease-in-out duration-150"
 
   return (
-    <footer className="w-full flex text-center py-2 px-12 bg-gray-800">
+    <footer className="w-full flex text-center py-2 px-12 bg-navBackground site-linear-gradient border-b-0 border-t-8">
       <div className="flex mx-auto">
         <a href="https://twitter.com/will__tweets">
           <TwitterIcon iconVisualTheme={iconVisualTheme} />

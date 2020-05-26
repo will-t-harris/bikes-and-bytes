@@ -13,6 +13,11 @@ module.exports = {
         "blueGray-300": "#9fb3c8",
         "blueGray-200": "#bcccdc",
         "blueGray-100": "#d9e2ec",
+        bodyBackground: "#333030",
+        navBackground: "#2B2728",
+        primary: "#19D938",
+        secondary: "#FF7D05",
+        accent: "#FF0545",
       },
       fontFamily: {
         "roboto-slab": ["roboto slab", ...defaultTheme.fontFamily.sans],
