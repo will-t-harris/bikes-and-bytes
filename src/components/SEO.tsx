@@ -2,9 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-import favicon16 from "../../data/assets/favicon-16x16.png"
-import favicon32 from "../../data/assets/favicon-32x32.png"
-
 interface Props {
   description?: string
   lang?: string
@@ -14,7 +11,7 @@ interface Props {
 }
 
 function SEO({ description, lang, meta, title, pathname }: Props) {
-  const { site } = useStaticQuery(
+  const { site, favicon16, favicon32 } = useStaticQuery(
     graphql`
       query {
         site {
@@ -25,12 +22,38 @@ function SEO({ description, lang, meta, title, pathname }: Props) {
             siteUrl
           }
         }
+        favicon16: file(
+          sourceInstanceName: { eq: "assets" }
+          childImageSharp: {
+            fixed: { originalName: { regex: "/favicon-16x16/" } }
+          }
+        ) {
+          childImageSharp {
+            fixed(width: 16) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        favicon32: file(
+          sourceInstanceName: { eq: "assets" }
+          childImageSharp: {
+            fixed: { originalName: { regex: "/favicon-32x32/" } }
+          }
+        ) {
+          childImageSharp {
+            fixed(width: 32) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const icon16 = favicon16.childImageSharp.fixed.src
+  const icon32 = favicon32.childImageSharp.fixed.src
 
   return (
     <Helmet
@@ -51,13 +74,13 @@ function SEO({ description, lang, meta, title, pathname }: Props) {
                 rel: "icon",
                 type: "image/png",
                 sizes: "16x16",
-                href: `${favicon16}`,
+                href: `${icon16}`,
               },
               {
                 rel: "icon",
                 type: "image/png",
                 sizes: "32x32",
-                href: `${favicon32}`,
+                href: `${icon32}`,
               },
             ]
           : [
@@ -65,13 +88,13 @@ function SEO({ description, lang, meta, title, pathname }: Props) {
                 rel: "icon",
                 type: "image/png",
                 sizes: "16x16",
-                href: `${favicon16}`,
+                href: `${icon16}`,
               },
               {
                 rel: "icon",
                 type: "image/png",
                 sizes: "32x32",
-                href: `${favicon32}`,
+                href: `${icon32}`,
               },
             ]
       }
