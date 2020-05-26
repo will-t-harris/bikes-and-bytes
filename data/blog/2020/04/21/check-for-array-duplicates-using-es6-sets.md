@@ -6,7 +6,7 @@ date: "2020-04-21"
 
 When dealing with arrays of values in JavaScript we sometimes want to determine if the array contains any duplicate values. Unfortunately, JavaScript arrays do not expose any built-in methods that can do this for us -- we have to write the implementation ourselves.
 
-One approach is to this problem might look like this:
+One approach to this problem might look like this:
 
 ```javascript
 function checkForDuplicates(array) {
