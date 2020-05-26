@@ -7,7 +7,7 @@ import CodeIcon from "./icons/CodeIcon"
 
 const Header = () => {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-blueGray-900 px-6 ">
+    <nav className="flex items-center justify-between flex-wrap bg-navBackground px-6 site-linear-gradient">
       <div className="flex mx-auto py-4 items-center flex-shrink-0 lg:mr-6 lg:ml-0">
         <Link to="/" className="lg:ml-6 lg:mr-6 flex self-center flex-row">
           <BikeIcon />

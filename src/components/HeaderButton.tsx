@@ -11,7 +11,7 @@ const HeaderButton = ({ buttonTitle, buttonSlug, buttonClass }: Props) => (
   <Link
     to={buttonSlug}
     className={buttonClass}
-    activeClassName="text-pink-600 underline transition-all ease-in duration-200"
+    activeClassName="text-accent underline transition-all ease-in duration-200"
   >
     {buttonTitle}
   </Link>

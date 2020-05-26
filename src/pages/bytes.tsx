@@ -27,16 +27,16 @@ const BytesPage = ({ data }: Props) => {
     <>
       <SEO title="Bytes" pathname={pathname} />
       <div className="flex flex-col text-col">
-        <hr className="mt-20 border-blueGray-900" />
-        <hr className="border-blueGray-900" />
-        <hr className="mb-20 border-blueGray-900" />
+        <hr className="mt-20 border-secondary" />
+        <hr className="border-secondary" />
+        <hr className="mb-20 border-secondary" />
         <ul className="list-none">
           {data &&
             data.allMarkdownRemark.nodes.map((post: any) => (
               <li key={post.id} className="mb-8">
                 <Link
                   to={post.frontmatter.path}
-                  className="text-2xl font-semibold hover:underline hover:text-pink-600 transition ease-in-out duration-75"
+                  className="text-2xl font-semibold hover:underline hover:text-accent transition ease-in-out duration-75"
                 >
                   {post.frontmatter.title}
                 </Link>

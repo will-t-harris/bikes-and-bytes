@@ -17,7 +17,7 @@ const BikesPage = ({ data }: Props) => {
   return (
     <>
       <SEO title="Bikes" pathname={pathname} />
-      <h1 className="py-16 font-serif text-4xl text-gray-900 font-bold text-col">
+      <h1 className="py-16 font-serif text-4xl text-white font-bold text-col">
         Bikes
       </h1>
       <p className="text-col">Welcome to the bikes page</p>

@@ -20,7 +20,7 @@ const IndexPage = ({ data }: Props) => {
     <>
       <SEO title="Home" pathname={pathname} />
       <article className="lg:grid lg:grid-cols-4 pt-20">
-        <h1 className="mx-8 lg:mx-0 lg:col-start-2 lg:col-end-4 font-roboto-slab text-5xl text-blueGray-900 font-bold">
+        <h1 className="mx-8 lg:mx-0 lg:col-start-2 lg:col-end-4 font-roboto-slab text-5xl font-bold">
           <Typewriter />
         </h1>
         <div className="flex flex-col mx-8 mt-10 lg:mx-0 lg:grid lg:col-start-2 lg:col-span-2">
@@ -41,27 +41,27 @@ const IndexPage = ({ data }: Props) => {
         </div>
       </article>
       <div
-        className="flex bg-blueGray-900 text-gray-200 rounded-lg mx-auto mt-20 shadow-2xl border-4 border-pink-600 w-64 h-16 hover:text-gray-200 hover:bg-blueGray-900 transition-colors duration-500"
+        className="flex bg-bodyBackground text-gray-200 rounded-lg mx-auto mt-20 shadow-2xl border-4 w-64 h-16 hover:text-gray-200 hover:border-accent transition-colors duration-500"
         role="button"
         tabIndex={0}
       >
         <Link
           to="/bytes"
-          className="font-extrabold hover:text-pink-400 transition-colors duration-300 pt-4 pl-10 w-64 h-16"
+          className="font-extrabold hover:text-accent transition-colors duration-300 pt-4 pl-10 w-64 h-16"
         >
           LATEST BLOG POSTS
         </Link>
       </div>
       <div className="content-text flex flex-col mx-8 mt-20 pb-20 lg:mx-0 lg:grid lg:grid-cols-4 lg:grid-rows-3">
-        <p className="content-text py-4 font-open-sans text-lg text-gray-900 font-semibold lg:col-start-2">
+        <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Want to work together?
         </p>
-        <p className="content-text py-4 font-open-sans text-lg text-gray-900 font-semibold lg:col-start-2">
+        <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Got an awesome project in mind?
         </p>
-        <p className="content-text py-4 font-open-sans text-lg text-gray-900 font-semibold lg:col-start-2">
+        <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Contact me at
-          <em className="text-pink-600"> will@bikesandbytes.net</em>
+          <em className="text-accent"> will@bikesandbytes.net</em>
         </p>
       </div>
     </>
