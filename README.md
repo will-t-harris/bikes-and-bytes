@@ -9,3 +9,4 @@
 - TypeScript
 - TailwindCSS
 - PrismJS
+- Jest
