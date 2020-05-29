@@ -40,7 +40,7 @@ const Bike = ({ data }: Props) => {
       <Link to="/" style={{ display: "block" }}>
         Return to homepage
       </Link>
-      <Link to="/bike" style={{ display: "block" }}>
+      <Link to="/bikes" style={{ display: "block" }}>
         Return to bikes
       </Link>
     </>

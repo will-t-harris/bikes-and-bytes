@@ -27,9 +27,7 @@ const BytesPage = ({ data }: Props) => {
     <>
       <SEO title="Bytes" pathname={pathname} />
       <div className="flex flex-col text-col">
-        <hr className="mt-20 border-secondary" />
-        <hr className="border-secondary" />
-        <hr className="mb-20 border-secondary" />
+        <hr className="my-20 border-2 border-secondary" />
         <ul className="list-none">
           {data &&
             data.allMarkdownRemark.nodes.map((post: any) => (

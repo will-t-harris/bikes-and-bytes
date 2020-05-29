@@ -24,7 +24,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   data.allMarkdownRemark.nodes.forEach(node => {
     if (node.frontmatter.slug) {
       createPage({
-        path: `/bike/${node.frontmatter.slug}`,
+        path: `/bikes/${node.frontmatter.slug}`,
         component: bikeTemplate,
         context: { slug: node.frontmatter.slug },
       })

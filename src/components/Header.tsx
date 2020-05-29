@@ -22,7 +22,7 @@ const Header = () => {
         />
         <HeaderButton
           buttonTitle="Bikes"
-          buttonSlug="/bike"
+          buttonSlug="/bikes"
           buttonClass="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
         />
       </div>
