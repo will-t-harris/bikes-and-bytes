@@ -1,7 +1,7 @@
 {
   "name": "bikes-and-bytes",
   "private": true,
-  "description": "A simple blog site built with Gatsby",
+  "description": "Will Harris' personal website and blog. A corner of the internet to collect my thoughts about programming, technology, and bicycles.",
   "version": "0.1.0",
   "author": "Will Harris",
   "dependencies": {
@@ -30,11 +30,18 @@
     "typewriter-effect": "^2.13.0"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.7",
     "eslint": "^6.8.0",
     "gatsby-plugin-typescript": "^2.1.27",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
     "prettier": "^1.19.1",
+    "react-test-renderer": "^16.13.1",
     "tailwindcss": "^1.2.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
@@ -50,7 +57,7 @@
     "start": "npm run tailwind:css && npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "tailwind:css": "tailwind build src/tailwind.css -c tailwind.config.js -o src/index.css",
     "type-check": "tsc"
   },
