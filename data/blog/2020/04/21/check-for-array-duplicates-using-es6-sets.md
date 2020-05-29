@@ -32,7 +32,7 @@ In case you aren't familiar with Sets in JavaScript (I wasn't until recently!), 
 > `Set` objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the `Set` **may only occur once**;
 > it is unique in the `Set`'s collection.
 
-Read that last line once more time, as that is our secret sauce here. 'A value in the `Set` **may only occur once**; it is unique in the `Set`'s collection.'
+Read that last line one more time, as that is our secret sauce here. 'A value in the `Set` **may only occur once**; it is unique in the `Set`'s collection.'
 
 This fact means that we can convert our original array into a `Set` and then be confident that it only contains unique values. Once we've extracted all of the unique values from the array and stored them in our `Set`, we can compare the lengths of the array and the Set. If the lengths are not the same, it must follow that the array contained duplicate values!
 
