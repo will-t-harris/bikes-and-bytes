@@ -61,7 +61,10 @@ const IndexPage = ({ data }: Props) => {
         </p>
         <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Contact me at
-          <em className="text-accent"> will@bikesandbytes.net</em>
+          <em className="text-primary font-extrabold">
+            {" "}
+            will@bikesandbytes.net
+          </em>
         </p>
       </div>
     </>
