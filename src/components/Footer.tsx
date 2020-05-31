@@ -12,16 +12,28 @@ const Footer = () => {
     <footer className="w-full flex text-center py-2 px-12 bg-navBackground site-linear-gradient border-b-0 border-t-8">
       <div className="flex mx-auto">
         <a href="https://twitter.com/will__tweets">
-          <TwitterIcon iconVisualTheme={iconVisualTheme} />
+          <TwitterIcon
+            iconVisualTheme={iconVisualTheme}
+            iconTitle="twitterIcon"
+          />
         </a>
         <a href="https://www.linkedin.com/in/will-t-harris/">
-          <LinkedinIcon iconVisualTheme={iconVisualTheme} />
+          <LinkedinIcon
+            iconVisualTheme={iconVisualTheme}
+            iconTitle="linkedinIcon"
+          />
         </a>
         <a href="https://www.github.com/will-t-harris">
-          <GithubIcon iconVisualTheme={iconVisualTheme} />
+          <GithubIcon
+            iconVisualTheme={iconVisualTheme}
+            iconTitle="githubIcon"
+          />
         </a>
         <a href="https://www.instagram.com/willbikes/">
-          <InstagramIcon iconVisualTheme={iconVisualTheme} />
+          <InstagramIcon
+            iconVisualTheme={iconVisualTheme}
+            iconTitle="instagramIcon"
+          />
         </a>
       </div>
     </footer>

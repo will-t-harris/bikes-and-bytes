@@ -8,6 +8,17 @@ module.exports = {
     siteUrl: `https://www.bikesandbytes.net`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-prismjs`],
+      },
+    },
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -15,16 +26,6 @@ module.exports = {
         head: true,
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-prismjs`],
-      },
-    },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
