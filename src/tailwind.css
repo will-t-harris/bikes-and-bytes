@@ -54,14 +54,19 @@
   @apply underline;
 }
 
-/* Markdown Unordered List Items */
+/* Markdown Lists */
 .markdown ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
 
-.markdown ul li:last-child {
+.markdown ul li:last-child,
+.markdown ol li:last-child {
   @apply mb-4;
+}
+
+.markdown ol {
+  @apply list-decimal;
 }
 
 /* Markdown Tables */
