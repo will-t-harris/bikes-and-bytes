@@ -718,15 +718,20 @@ video {
   text-decoration: underline;
 }
 
-/* Markdown Unordered List Items */
+/* Markdown Lists */
 
 .markdown ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
 
-.markdown ul li:last-child {
+.markdown ul li:last-child,
+.markdown ol li:last-child {
   margin-bottom: 1rem;
+}
+
+.markdown ol {
+  list-style-type: decimal;
 }
 
 /* Markdown Tables */
