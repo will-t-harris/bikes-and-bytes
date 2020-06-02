@@ -1,64 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
-<nav
-  className="flex items-center justify-between flex-wrap bg-navBackground px-6 site-linear-gradient"
+exports[`Header renders the component 1`] = `
+<header
+  class="flex items-center justify-between flex-wrap bg-navBackground px-6 site-linear-gradient"
 >
-  <div
-    className="flex mx-auto py-4 items-center flex-shrink-0 lg:mr-6 lg:ml-0"
+  <nav
+    class="flex mx-auto py-4 items-center flex-shrink-0 lg:mr-6 lg:ml-0"
   >
     <a
-      className="lg:ml-6 lg:mr-6 flex self-center flex-row"
+      class="lg:ml-6 lg:mr-6 flex self-center flex-row"
       href="/"
     >
       <svg
-        className="fill-current text-blueGray-100 bg-navBackground ml-6"
+        aria-labelledby="bikeIcon"
+        class="fill-current text-blueGray-100 bg-navBackground ml-6"
         fill="none"
         height="64"
         viewBox="0 0 96 55"
         width="96"
       >
+        <title
+          id="bikeIcon"
+        >
+          Bike icon
+        </title>
         <path
           d="M78 18.857c-3.298 0-6.382.907-9.045 2.462L57.297 3.429h16.455c-.022.853-.221 2.281-1.198 3.404-1.007 1.154-2.633 1.738-4.84 1.738a.857.857 0 100 1.715c2.724 0 4.787-.782 6.13-2.325 1.994-2.29 1.595-5.376 1.576-5.506a.857.857 0 00-.849-.74H55.714a.853.853 0 00-.716 1.326l4.853 7.447H32.654l-5.285-8.774h9.488a.857.857 0 100-1.714H21.43a.857.857 0 100 1.714h3.966c.018.04.021.083.043.12l5.85 9.707-5.236 9.24A17.88 17.88 0 0018 18.857c-9.926 0-18 8.074-18 18s8.074 18 18 18c9.58 0 17.412-7.527 17.863-17.143h18.994c.05.993-.164 2.345-1.104 3.41-1.015 1.15-2.662 1.733-4.896 1.733a.857.857 0 000 1.714c2.757 0 4.841-.783 6.196-2.328 1.957-2.235 1.589-5.204 1.573-5.33a.858.858 0 00-.85-.745h-6.734l12.08-23.726 6.395 9.813C62.974 25.524 60 30.843 60 36.857c0 9.926 8.074 18 18 18s18-8.074 18-18-8.074-18-18-18zM59.323 12l-11.74 23.26L33.687 12h25.636zm-27.02 1.226l13.825 22.942H35.966a17.977 17.977 0 00-8.42-14.544l4.756-8.398zm1.948 22.942H19.305L26.7 23.114a16.275 16.275 0 017.551 13.054zM18 53.143c-8.98 0-16.286-7.306-16.286-16.286S9.021 20.571 18 20.571c2.589 0 5.03.624 7.207 1.703l-8.119 14.328a.854.854 0 00.005.853c.153.263.436.426.74.258h16.401c-.533 8.67-7.6 15.43-16.234 15.43zm60 0c-8.98 0-16.286-7.306-16.286-16.286 0-5.412 2.664-10.203 6.74-13.166l8.996 13.802a.86.86 0 001.186.25.86.86 0 00.25-1.186l-8.995-13.802A16.154 16.154 0 0178 20.571c8.98 0 16.286 7.307 16.286 16.286 0 8.98-7.307 16.286-16.286 16.286z"
         />
         <defs>
-          <clipPath
+          <clippath
             id="clip0"
           >
             <path
               d="M0 0h96v64H0z"
               fill="#fff"
             />
-          </clipPath>
+          </clippath>
         </defs>
       </svg>
       <svg
-        className="fill-current text-blueGray-100 mx-6"
+        aria-labelledby="codeIcon"
+        class="fill-current text-blueGray-100 mx-6"
         fill="none"
         height="64"
         width="64"
       >
+        <title
+          id="codeIcon"
+        >
+          Code terminal icon
+        </title>
         <path
           d="M32.32 44.88c0 .352.272.64.6.64h14.8c.328 0 .6-.288.6-.64v-3.84c0-.352-.272-.64-.6-.64h-14.8c-.328 0-.6.288-.6.64v3.84zm-15.592.488l15.36-12.88a.645.645 0 000-.984l-15.36-12.872a.636.636 0 00-1.048.488v5.016c0 .192.08.368.232.488L24.696 32l-8.784 7.376a.647.647 0 00-.232.488v5.016c0 .544.632.84 1.048.488zM61.44 0H2.56A2.557 2.557 0 000 2.56v58.88A2.557 2.557 0 002.56 64h58.88A2.557 2.557 0 0064 61.44V2.56A2.557 2.557 0 0061.44 0zm-3.2 58.24H5.76V5.76h52.48v52.48z"
         />
       </svg>
     </a>
-  </div>
-  <div
-    className="w-full flex lg:w-auto"
+  </nav>
+  <nav
+    class="w-full flex lg:w-auto"
   >
     <a
-      className="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
+      class="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
       href="/bytes"
     >
       Bytes
     </a>
     <a
-      className="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
+      class="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
       href="/bikes"
     >
       Bikes
     </a>
-  </div>
-</nav>
+  </nav>
+</header>
 `;
