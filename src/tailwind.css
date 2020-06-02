@@ -9,14 +9,6 @@
   border-image-source: linear-gradient(to left, #19d938, #ff0545, #ff7d05);
 }
 
-.content-text {
-  opacity: 0.87;
-}
-
-.text-col {
-  @apply block mx-auto w-1/2;
-}
-
 /* Header Buttons */
 .header-btn {
   @apply flex py-6 mx-auto text-2xl text-blueGray-100 font-semibold justify-center;
