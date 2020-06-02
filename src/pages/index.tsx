@@ -1,14 +1,20 @@
 import React from "react"
-import { Link, graphql, PageProps } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Typewriter from "../components/TypeWriter"
 import SEO from "../components/SEO"
 
-type IndexQueryProps = { sitePage: { path: string } }
+interface Props {
+  data: {
+    sitePage: {
+      path: string
+    }
+  }
+}
 
-const IndexPage = (props: PageProps<IndexQueryProps>) => {
+const IndexPage = ({ data }: Props) => {
   // Path to current page for SEO component
-  const pathname = props.data.sitePage.path
+  const pathname = data.sitePage.path
 
   return (
     <>
@@ -18,16 +24,16 @@ const IndexPage = (props: PageProps<IndexQueryProps>) => {
           <Typewriter />
         </h1>
         <div className="flex flex-col mx-8 mt-10 lg:mx-0 lg:grid lg:col-start-2 lg:col-span-2">
-          <p className="content-text font-open-sans font-semibold text-lg w-full">
+          <p className="font-open-sans font-semibold text-lg w-full opacity-87">
             I'm a developer currently living in San Francisco. This website is
             intended as a place to collect my thoughts about programming,
             technology, and my growing quiver of bicycles. 🙂
           </p>
-          <p className="mt-10 content-text font-open-sans font-semibold text-lg w-full">
+          <p className="mt-10 opacity-87 font-open-sans font-semibold text-lg w-full">
             I'm interested in open source software, online privacy,
             cryptography, and security.
           </p>
-          <p className="mt-10 content-text font-open-sans font-semibold text-lg w-full">
+          <p className="mt-10 opacity-87 font-open-sans font-semibold text-lg w-full">
             I'm passionate about bikes - I think they make the world a better
             place. I'm happiest bumping along on a dirt road on a sunny day in
             the middle of nowhere carrying all that I need on my bike.
@@ -46,14 +52,14 @@ const IndexPage = (props: PageProps<IndexQueryProps>) => {
           LATEST BLOG POSTS
         </Link>
       </div>
-      <div className="content-text flex flex-col mx-8 mt-20 pb-20 lg:mx-0 lg:grid lg:grid-cols-4 lg:grid-rows-3">
-        <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
+      <div className="opacity-87 flex flex-col mx-8 mt-20 pb-20 lg:mx-0 lg:grid lg:grid-cols-4 lg:grid-rows-3">
+        <p className="opacity-87 py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Want to work together?
         </p>
-        <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
+        <p className="opacity-87 py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Got an awesome project in mind?
         </p>
-        <p className="content-text py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
+        <p className="opacity-87 py-4 font-open-sans text-lg text-white font-semibold lg:col-start-2">
           Contact me at
           <em className="text-primary font-extrabold">
             {" "}
