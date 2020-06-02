@@ -1,20 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, PageProps } from "gatsby"
 
 import Typewriter from "../components/TypeWriter"
 import SEO from "../components/SEO"
 
-interface Props {
-  data: {
-    sitePage: {
-      path: string
-    }
-  }
-}
+type IndexQueryProps = { sitePage: { path: string } }
+type IndexPageProps = PageProps<IndexQueryProps>
 
-const IndexPage = ({ data }: Props) => {
+const IndexPage = (props: IndexPageProps) => {
   // Path to current page for SEO component
-  const pathname = data.sitePage.path
+  const pathname = props.data.sitePage.path
 
   return (
     <>
