@@ -1,12 +1,36 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { render, screen } from "@testing-library/react"
 
 import Header from "../Header"
 
 describe("Header", () => {
-  it("renders correctly", () => {
-    const tree = renderer.create(<Header />).toJSON()
+  it("renders the component", () => {
+    const { container } = render(<Header />)
 
-    expect(tree).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
+  it("renders the bike icon", () => {
+    render(<Header />)
+
+    expect(screen.getByTitle("Bike icon")).toBeInTheDocument()
+  })
+
+  it("renders the code icon", () => {
+    render(<Header />)
+
+    expect(screen.getByTitle("Code terminal icon"))
+  })
+
+  it("renders the Bytes link", () => {
+    render(<Header />)
+
+    expect(screen.getByText("Bytes")).toBeInTheDocument()
+  })
+
+  it("renders the Bikes link", () => {
+    render(<Header />)
+
+    expect(screen.getByText("Bikes")).toBeInTheDocument()
   })
 })
