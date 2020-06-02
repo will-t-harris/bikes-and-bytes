@@ -19,7 +19,7 @@ describe("Header", () => {
   it("renders the code icon", () => {
     render(<Header />)
 
-    expect(screen.getByTitle("Code terminal icon"))
+    expect(screen.getByTitle("Code terminal icon")).toBeInTheDocument()
   })
 
   it("renders the Bytes link", () => {
