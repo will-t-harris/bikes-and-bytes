@@ -5,9 +5,8 @@ import Typewriter from "../components/TypeWriter"
 import SEO from "../components/SEO"
 
 type IndexQueryProps = { sitePage: { path: string } }
-type IndexPageProps = PageProps<IndexQueryProps>
 
-const IndexPage = (props: IndexPageProps) => {
+const IndexPage = (props: PageProps<IndexQueryProps>) => {
   // Path to current page for SEO component
   const pathname = props.data.sitePage.path
 
