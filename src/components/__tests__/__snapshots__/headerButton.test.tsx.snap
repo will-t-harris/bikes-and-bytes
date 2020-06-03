@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Button matches the previous snapshot 1`] = `
+<a
+  class="mx-auto"
+  href="/testSlug"
+>
+  Test title
+</a>
+`;

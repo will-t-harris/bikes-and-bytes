@@ -47,7 +47,7 @@ const Post = ({ data }: Props) => {
         </div>
 
         <div
-          className="markdown mx-8 lg:mx-0 col-start-2 col-span-2 leading-8 content-text text-lg"
+          className="markdown mx-8 lg:mx-0 col-start-2 col-span-2 leading-8 opacity-87 text-lg"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>

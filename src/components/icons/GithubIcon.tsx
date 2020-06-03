@@ -11,7 +11,6 @@ const GithubIcon = ({ iconVisualTheme, iconTitle }: Props) => (
     height="56.693"
     viewBox="-1163 1657.697 56.693 56.693"
     width="56.693"
-    fill="none"
     aria-labelledby={iconTitle}
   >
     <title id={iconTitle}>GitHub icon</title>

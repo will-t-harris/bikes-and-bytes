@@ -17,28 +17,27 @@ const BikesPage = ({ data }: Props) => {
   return (
     <>
       <SEO title="Bikes" pathname={pathname} />
-      <h1 className="py-16 font-serif text-4xl text-white font-bold text-col">
+      <h1 className="py-16 font-serif text-4xl text-white font-bold mx-auto w-1/2">
         Bikes
       </h1>
-      <p className="text-col">Welcome to the bikes page</p>
-      <div className="text-col">
+      <div className="flex flex-col mx-auto w-1/2">
         <Link
           to="/bikes/long-haul-trucker"
-          className="px-4 ml-10 text-green-800 hover:text-green-500 hover:underline"
+          className="px-4 text-green-800 hover:text-green-500 hover:underline"
         >
-          Long Haul Trucker
+          2012 Surly Long Haul Trucker
         </Link>
         <Link
           to="/bikes/krampus"
           className="px-4 text-red-800 hover:text-red-500 hover:underline"
         >
-          Krampus
+          2018 Surly Krampus
         </Link>
         <Link
           to="/bikes/unit"
           className="px-4 text-purple-700 hover:text-purple-500 hover:underline"
         >
-          Unit
+          2015 Kona Unit
         </Link>
       </div>
     </>

@@ -8,13 +8,13 @@ As developers, we spend a great deal of time in our text editors and terminals. 
 
 This series of posts is primarily a way for me to store and reference some of the shell tricks and tips I've come across that I can never remember. I hope that they can be of some use to you as well. [^1] 
 
-I should also note my understanding is that all of these commands will work with both `bash` and `zsh` default shell configurations, but if I'm mistaken in this please reach out to correct me!
+I should also note: my understanding is that all of these commands will work with both `bash` and `zsh` default shell configurations, but if I'm mistaken in this please reach out to correct me!
 
 [^1]: I learned about many of these shortcuts from [this blog post](https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html)
 
 ## Navigating the current line
 
-Moving around the current line in your terminal with the <kbd>←</kbd> and <kbd>→</kbd> keys is slow - it's no way to live your life. There's a better way! The following table shows some shortcuts for navigating the current command quickly.
+Moving around the current line in your terminal with the <kbd>←</kbd> and <kbd>→</kbd> keys is slow - it's no way to live your life. The following table shows some shortcuts for navigating the current command quickly.
 
 | Navigation                                                   | Shortcut                                      |
 | ------------------------------------------------------------ | --------------------------------------------- |
@@ -55,7 +55,7 @@ There is a little bit of nuance here.
 
 The <kbd>Ctrl</kbd> + <kbd>W</kbd> and <kbd>Alt</kbd> + <kbd>D</kbd> commands build up the cut buffer sequentially from within the current command. This can be useful if you want to cut the first/last three words in a command, for example, but not the entire line. This behavior, as far as I can tell, does not allow you to bounce around different parts of the command, but only from any given word forward/backward. As soon as you start navigating around other parts of the command and making cuts, it seems the cut buffer is overwritten. 
 
-**(If my understanding of this is flawed, please let me know!)**
+**(If my understanding of this is flawed, please let me know.)**
 
 ------
 
@@ -80,4 +80,4 @@ firefox &
 
 This list is just a taste of the things we can do with our terminals. Mastering these shortcuts will greatly increase how quickly and efficiently you can navigate and control your command-line environment.
 
-If you have any other keyboard shortcuts that you feel should be included in this list, please reach out and let me know through my contact page!
+If you have any other keyboard shortcuts that you feel should be included in this list, please reach out and let me know.

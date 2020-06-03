@@ -23,6 +23,9 @@ module.exports = {
         "roboto-slab": ["roboto slab", ...defaultTheme.fontFamily.sans],
         "open-sans": ["open sans", ...defaultTheme.fontFamily.sans],
       },
+      opacity: {
+        87: "0.87",
+      },
     },
   },
   variants: {},

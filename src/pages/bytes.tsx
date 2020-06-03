@@ -26,7 +26,7 @@ const BytesPage = ({ data }: Props) => {
   return (
     <>
       <SEO title="Bytes" pathname={pathname} />
-      <div className="flex flex-col text-col">
+      <div className="flex flex-col mx-auto w-1/2">
         <hr className="my-20 border-2 border-secondary" />
         <ul className="list-none">
           {data &&

@@ -1,7 +1,6 @@
 import React from "react"
 
 import Header from "./Header"
-import "../../src/index.css"
 import Footer from "./Footer"
 
 interface Props {
