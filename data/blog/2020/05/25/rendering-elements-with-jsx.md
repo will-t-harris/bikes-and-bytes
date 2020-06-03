@@ -4,7 +4,7 @@ title: "React: Rendering Elements with JSX"
 date: "2020-05-25"
 ---
 
-[Last week we introduced JSX](https://bikesandbytes.net/jsx-basics) and discussed how it is a syntax extension to JavaScript that makes life easier when writing HTML and JavaScript in React.
+[Last week we introduced JSX](/jsx-basics) and discussed how it is a syntax extension to JavaScript that makes life easier when writing HTML and JavaScript in React.
 
 Today, let's talk about how we can use JSX to render elements in the DOM.
 

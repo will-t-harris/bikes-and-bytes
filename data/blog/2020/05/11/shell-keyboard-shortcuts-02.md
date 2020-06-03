@@ -4,7 +4,7 @@ title: "Shell: Keyboard Shortcuts Pt. 2"
 date: "2020-05-11"
 ---
 
-This is part two of a series of posts on zsh/bash keyboard shortcuts. Let's dive right back in [where we left off last time](https://bikesandbytes.net/shell-keyboard-shortcuts-01)!
+This is part two of a series of posts on zsh/bash keyboard shortcuts. Let's dive right back in [where we left off last time](/shell-keyboard-shortcuts-01)!
 
 ## Navigating through the shell's history
 
