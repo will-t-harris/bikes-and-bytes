@@ -25,6 +25,11 @@ const Header = () => {
           buttonSlug="/bikes"
           buttonClass="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
         />
+        <HeaderButton
+          buttonTitle="Projects"
+          buttonSlug="/projects"
+          buttonClass="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
+        />
       </nav>
     </header>
   )

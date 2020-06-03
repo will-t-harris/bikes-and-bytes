@@ -1,13 +1,13 @@
 import React from "react"
 
 interface Props {
-  iconVisualTheme: string
+  twClasses: string
   iconTitle: string
 }
 
-const InstagramIcon = ({ iconVisualTheme, iconTitle }: Props) => (
+const InstagramIcon = ({ twClasses, iconTitle }: Props) => (
   <svg
-    className={iconVisualTheme}
+    className={twClasses}
     height="56.693"
     viewBox="0 0 56.7 56.7"
     aria-labelledby={iconTitle}

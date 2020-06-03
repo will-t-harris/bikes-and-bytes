@@ -1,13 +1,13 @@
 import React from "react"
 
 interface Props {
-  iconVisualTheme: string
+  twClasses: string
   iconTitle: string
 }
 
-const LinkedinIcon = ({ iconVisualTheme, iconTitle }: Props) => (
+const LinkedinIcon = ({ twClasses, iconTitle }: Props) => (
   <svg
-    className={iconVisualTheme}
+    className={`fill-current ${twClasses}`}
     height="56.693"
     version="1.2"
     viewBox="0 0 24 24"

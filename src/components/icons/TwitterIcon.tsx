@@ -1,13 +1,13 @@
 import React from "react"
 
 interface Props {
-  iconVisualTheme: string
+  twClasses: string
   iconTitle: string
 }
 
-const TwitterIcon = ({ iconVisualTheme, iconTitle }: Props) => (
+const TwitterIcon = ({ twClasses, iconTitle }: Props) => (
   <svg
-    className={iconVisualTheme}
+    className={twClasses}
     height="56.693"
     width="56.693"
     aria-labelledby={iconTitle}
