@@ -4,7 +4,7 @@ title: "React: What Are React Components?"
 date: "2020-06-01"
 ---
 
-[Last week we discussed how to render elements in React using JSX](https://bikesandbytes.net/rendering-elements-with-jsx).
+[Last week we discussed how to render elements in React using JSX](/rendering-elements-with-jsx).
 
 This week I want to examine how we can use React's component-based approach to split our UI into separate, reusable pieces.
 

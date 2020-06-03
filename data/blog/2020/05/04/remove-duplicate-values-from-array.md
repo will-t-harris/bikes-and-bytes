@@ -4,7 +4,7 @@ title: "JavaScript: How to Remove Duplicate Values From Arrays"
 date: "2020-05-04"
 ---
 
-In a [previous post](https://www.bikesandbytes.net/check-for-array-duplicates) we saw how to determine whether a JavaScript array contains duplicate values. Today, I want to show a few different methods I've found for removing duplicate values from an array.[^1]
+In a [previous post](/check-for-array-duplicates) we saw how to determine whether a JavaScript array contains duplicate values. Today, I want to show a few different methods I've found for removing duplicate values from an array.[^1]
 
 [^1]:
 
