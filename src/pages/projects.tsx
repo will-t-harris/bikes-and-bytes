@@ -45,10 +45,10 @@ const ProjectsPage = () => {
   return (
     <>
       <SEO title="Projects" pathname={pathname} />
-      <div className="flex flex-col py-10 lg:py-20 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
+      <article className="flex flex-col py-10 lg:py-20 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
         <a
           href="https://movewithmadeline.com"
-          className="flex flex-col lg:col-start-2 lg:col-span-2"
+          className="flex flex-col self-center lg:col-start-2 lg:col-span-2"
         >
           <ProjectImage
             data={data.moveWithMadeline.childImageSharp}
@@ -61,22 +61,28 @@ const ProjectsPage = () => {
         >
           movewithmadeline.com
         </a>
-        <p className="mx-8 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
-          mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
-          risus sit amet justo porta vehicula. Morbi a magna volutpat,
-          ullamcorper risus vel, egestas tortor. Morbi tristique, massa vel
-          accumsan dictum, mauris velit tincidunt justo, non ullamcorper tortor
-          neque quis leo. Integer nisl mauris, sollicitudin a imperdiet a,
-          ornare id risus. Duis eleifend leo mauris, pellentesque lacinia nisl
-          volutpat sed.
-        </p>
-      </div>
+        <div className="w-full mt-10 px-20 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          <h2 className="text-xl font-bold mb-4">Fitness/Lifestyle Blog</h2>
+          <a
+            href="https://github.com/will-t-harris/move-with-madeline"
+            className="underline text-blue-500 font-semibold visited:text-purple-600"
+          >
+            Source (GitHub)
+          </a>
+          <p className="font-semibold mt-4">Built with:</p>
+          <ul className="list-disc list-inside">
+            <li>React</li>
+            <li>Gatsby</li>
+            <li>Tailwind CSS</li>
+            <li>Netlify CMS</li>
+          </ul>
+        </div>
+      </article>
 
-      <div className="flex flex-col mt-10 mb-32 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
+      <article className="flex flex-col mt-10 pb-20 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
         <a
           href="http://abqtrails.deepdivecoding.com/"
-          className="flex flex-col lg:col-start-2 lg:col-span-2"
+          className="flex flex-col self-center lg:col-start-2 lg:col-span-2"
         >
           <ProjectImage
             data={data.abqBikeTrails.childImageSharp}
@@ -89,17 +95,27 @@ const ProjectsPage = () => {
         >
           abqtrails.deepdivecoding.com
         </a>
-        <p className="mx-8 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
-          mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
-          risus sit amet justo porta vehicula. Morbi a magna volutpat,
-          ullamcorper risus vel, egestas tortor. Morbi tristique, massa vel
-          accumsan dictum, mauris velit tincidunt justo, non ullamcorper tortor
-          neque quis leo. Integer nisl mauris, sollicitudin a imperdiet a,
-          ornare id risus. Duis eleifend leo mauris, pellentesque lacinia nisl
-          volutpat sed.
-        </p>
-      </div>
+        <div className="w-full mt-10 px-20 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          <h2 className="text-xl font-bold mb-4">
+            Albuquerque Area Bike Trails App
+          </h2>
+          <a
+            href="https://github.com/abq-outdoor-trails/outdoor-trails-master"
+            className="underline text-blue-500 font-semibold visited:text-purple-600"
+          >
+            Source (GitHub)
+          </a>
+          <p className="font-semibold mt-4">Built with:</p>
+          <ul className="list-disc list-inside">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Bootstrap</li>
+            <li>Mapbox GL JS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+      </article>
     </>
   )
 }
