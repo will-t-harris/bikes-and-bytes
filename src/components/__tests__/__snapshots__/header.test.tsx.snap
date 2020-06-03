@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders the component 1`] = `
+exports[`Header matches the previous snapshot 1`] = `
 <header
   class="flex items-center justify-between flex-wrap bg-navBackground px-6 site-linear-gradient"
 >

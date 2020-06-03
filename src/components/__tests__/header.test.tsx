@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react"
 import Header from "../Header"
 
 describe("Header", () => {
-  it("renders the component", () => {
+  it("matches the previous snapshot", () => {
     const { container } = render(<Header />)
 
     expect(container.firstChild).toMatchSnapshot()

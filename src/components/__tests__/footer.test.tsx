@@ -4,7 +4,7 @@ import { screen, render } from "@testing-library/react"
 import Footer from "../Footer"
 
 describe("Footer", () => {
-  it("renders the component", () => {
+  it("matches the previous snapshot", () => {
     const { container } = render(<Footer />)
 
     expect(container.firstChild).toMatchSnapshot()

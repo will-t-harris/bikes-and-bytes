@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer renders the component 1`] = `
+exports[`Footer matches the previous snapshot 1`] = `
 <footer
   class="w-full flex text-center py-2 px-12 bg-navBackground site-linear-gradient border-b-0 border-t-8"
 >
