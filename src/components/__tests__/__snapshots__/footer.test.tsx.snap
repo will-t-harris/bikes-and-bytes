@@ -59,7 +59,6 @@ exports[`Footer matches the previous snapshot 1`] = `
       <svg
         aria-labelledby="githubIcon"
         class="fill-current text-gray-400 hover:text-accent transition ease-in-out duration-150"
-        fill="none"
         height="56.693"
         viewBox="-1163 1657.697 56.693 56.693"
         width="56.693"
