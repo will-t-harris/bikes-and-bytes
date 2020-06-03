@@ -19,6 +19,9 @@ module.exports = {
         secondary: "#FF7D05",
         accent: "#FF0545",
       },
+      spacing: {
+        "52": "13rem",
+      },
       fontFamily: {
         "roboto-slab": ["roboto slab", ...defaultTheme.fontFamily.sans],
         "open-sans": ["open sans", ...defaultTheme.fontFamily.sans],

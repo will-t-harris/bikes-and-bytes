@@ -1,13 +1,13 @@
 import React from "react"
 
 interface Props {
-  iconVisualTheme: string
+  twClasses: string
   iconTitle: string
 }
 
-const GithubIcon = ({ iconVisualTheme, iconTitle }: Props) => (
+const GithubIcon = ({ twClasses, iconTitle }: Props) => (
   <svg
-    className={iconVisualTheme}
+    className={`fill-current ${twClasses}`}
     height="56.693"
     viewBox="-1163 1657.697 56.693 56.693"
     width="56.693"

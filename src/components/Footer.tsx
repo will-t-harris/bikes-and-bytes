@@ -5,35 +5,23 @@ import GithubIcon from "./icons/GithubIcon"
 import LinkedinIcon from "./icons/LinkedinIcon"
 
 const Footer = () => {
-  const iconVisualTheme =
-    "fill-current text-gray-400 hover:text-accent transition ease-in-out duration-150"
+  const twClasses =
+    "text-gray-400 hover:text-accent transition ease-in-out duration-150"
 
   return (
     <footer className="w-full flex text-center py-2 px-12 bg-navBackground site-linear-gradient border-b-0 border-t-8">
       <div className="flex mx-auto">
         <a href="https://twitter.com/will__tweets">
-          <TwitterIcon
-            iconVisualTheme={iconVisualTheme}
-            iconTitle="twitterIcon"
-          />
+          <TwitterIcon twClasses={twClasses} iconTitle="twitterIcon" />
         </a>
         <a href="https://www.linkedin.com/in/will-t-harris/">
-          <LinkedinIcon
-            iconVisualTheme={iconVisualTheme}
-            iconTitle="linkedinIcon"
-          />
+          <LinkedinIcon twClasses={twClasses} iconTitle="linkedinIcon" />
         </a>
         <a href="https://www.github.com/will-t-harris">
-          <GithubIcon
-            iconVisualTheme={iconVisualTheme}
-            iconTitle="githubIcon"
-          />
+          <GithubIcon twClasses={twClasses} iconTitle="githubIcon" />
         </a>
         <a href="https://www.instagram.com/willbikes/">
-          <InstagramIcon
-            iconVisualTheme={iconVisualTheme}
-            iconTitle="instagramIcon"
-          />
+          <InstagramIcon twClasses={twClasses} iconTitle="instagramIcon" />
         </a>
       </div>
     </footer>

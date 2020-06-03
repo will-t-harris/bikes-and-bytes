@@ -6,5 +6,6 @@
 
 - Gatsby
 - React
+- TypeScript
 - TailwindCSS
 - PrismJS
