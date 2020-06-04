@@ -71,6 +71,12 @@ exports[`Header matches the previous snapshot 1`] = `
     >
       Bikes
     </a>
+    <a
+      class="header-btn inline-block lg:flex lg:mt-0 lg:mr-12"
+      href="/projects"
+    >
+      Projects
+    </a>
   </nav>
 </header>
 `;
