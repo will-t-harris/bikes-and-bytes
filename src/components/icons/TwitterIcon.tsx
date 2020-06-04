@@ -7,7 +7,7 @@ interface Props {
 
 const TwitterIcon = ({ twClasses, iconTitle }: Props) => (
   <svg
-    className={twClasses}
+    className={`fill-current ${twClasses}`}
     height="56.693"
     width="56.693"
     aria-labelledby={iconTitle}

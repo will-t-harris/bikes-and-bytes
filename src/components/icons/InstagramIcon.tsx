@@ -7,7 +7,7 @@ interface Props {
 
 const InstagramIcon = ({ twClasses, iconTitle }: Props) => (
   <svg
-    className={twClasses}
+    className={`fill-current ${twClasses}`}
     height="56.693"
     viewBox="0 0 56.7 56.7"
     aria-labelledby={iconTitle}
