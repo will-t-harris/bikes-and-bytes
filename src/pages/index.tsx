@@ -1,8 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Typewriter from "../components/TypeWriter"
-import SEO from "../components/SEO"
+import { TypeWriter, SEO } from "../components"
 
 interface Props {
   data: {
@@ -21,7 +20,7 @@ const IndexPage = ({ data }: Props) => {
       <SEO title="Home" pathname={pathname} />
       <article className="lg:grid lg:grid-cols-4 pt-20">
         <h1 className="mx-8 lg:mx-0 lg:col-start-2 lg:col-end-4 font-roboto-slab text-5xl font-bold">
-          <Typewriter />
+          <TypeWriter />
         </h1>
         <div className="flex flex-col mx-8 mt-10 lg:mx-0 lg:grid lg:col-start-2 lg:col-span-2">
           <p className="font-open-sans font-semibold text-lg w-full opacity-87">

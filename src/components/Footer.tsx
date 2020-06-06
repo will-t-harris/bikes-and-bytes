@@ -1,8 +1,6 @@
 import React from "react"
-import TwitterIcon from "./icons/TwitterIcon"
-import InstagramIcon from "./icons/InstagramIcon"
-import GithubIcon from "./icons/GithubIcon"
-import LinkedinIcon from "./icons/LinkedinIcon"
+
+import { TwitterIcon, InstagramIcon, GithubIcon, LinkedinIcon } from "./icons"
 
 const Footer = () => {
   const twClasses =
