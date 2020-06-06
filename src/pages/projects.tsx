@@ -1,8 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import SEO from "../components/SEO"
-import ProjectImage from "../components/ProjectImage"
+import { SEO, ProjectImage } from "../components"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`

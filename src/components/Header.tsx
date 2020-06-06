@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import HeaderButton from "./HeaderButton"
-import BikeIcon from "./icons/BikeIcon"
-import CodeIcon from "./icons/CodeIcon"
+import { HeaderButton } from "./"
+import { BikeIcon, CodeIcon } from "./icons"
 
 const Header = () => {
   return (
