@@ -108,9 +108,11 @@ const ProjectsPage = () => {
           <ul className="list-disc list-inside">
             <li>React</li>
             <li>Redux</li>
+            <li>Axios</li>
             <li>Bootstrap</li>
             <li>Mapbox GL JS</li>
             <li>PHP</li>
+            <li>PHPUnit</li>
             <li>MySQL</li>
           </ul>
         </div>
