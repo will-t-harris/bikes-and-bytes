@@ -27,18 +27,6 @@ const BikesPage = ({ data }: Props) => {
         >
           2012 Surly Long Haul Trucker
         </Link>
-        <Link
-          to="/bikes/krampus"
-          className="px-4 text-red-800 hover:text-red-500 hover:underline"
-        >
-          2018 Surly Krampus
-        </Link>
-        <Link
-          to="/bikes/unit"
-          className="px-4 text-purple-700 hover:text-purple-500 hover:underline"
-        >
-          2015 Kona Unit
-        </Link>
       </div>
     </>
   )
