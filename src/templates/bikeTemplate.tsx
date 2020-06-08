@@ -7,6 +7,7 @@ import { SEO } from "../components"
 interface Props {
   data: {
     markdownRemark: {
+      html: string
       frontmatter: {
         title: string
         description: string
@@ -25,24 +26,20 @@ const Bike = ({ data }: Props) => {
     markdownRemark: { frontmatter },
   } = data
   const title = frontmatter.title
-  const description = frontmatter.description
-  const bikeImage = frontmatter.bikeImage.childImageSharp.fixed
   const pathname = `/${frontmatter.path}`
 
   return (
     <>
       <SEO title={title} pathname={pathname} />
-      <h1 className="text-center">{title}</h1>
-      <div className="mx-auto max-w-xl">
-        <Image fixed={bikeImage} />
+      <div className="flex flex-col lg:grid lg:grid-cols-4">
+        <h1 className="my-4 col-start-2 col-span-2 text-center text-4xl">
+          {title}
+        </h1>
+        <div
+          className="markdown mx-8 lg:mx-0 col-start-2 col-span-2 leading-8 opacity-87 text-lg"
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
       </div>
-      <p className="text-center">{description}</p>
-      <Link to="/" style={{ display: "block" }}>
-        Return to homepage
-      </Link>
-      <Link to="/bikes" style={{ display: "block" }}>
-        Return to bikes
-      </Link>
     </>
   )
 }
@@ -52,6 +49,7 @@ export default Bike
 export const query = graphql`
   query bikeQuery($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         title
         description
