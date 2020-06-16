@@ -46,6 +46,34 @@ const ProjectsPage = () => {
       <SEO title="Projects" pathname={pathname} />
       <article className="flex flex-col py-10 lg:py-20 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
         <a
+          href="https://github.com/will-t-harris/use-instagram-feed"
+          className="w-64 font-body font-semibold self-center text-center border-b-2 mt-10 border-secondary lg:mt-20 lg:col-start-5 "
+        >
+          use-instagram-feed
+        </a>
+        <div className="w-full mt-10 px-20 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          <h2 className="text-xl font-bold mb-4">Custom React Hook</h2>
+          <a
+            href="https://github.com/will-t-harris/use-instagram-feed"
+            className="underline text-blue-500 font-semibold visited:text-purple-600"
+          >
+            Source (GitHub)
+          </a>
+        </div>
+        <div className="w-full mt-10 px-20 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          <a
+            href="https://www.npmjs.com/package/use-instagram-feed"
+            className="underline text-blue-500 font-semibold visited:text-purple-600"
+          >
+            npm
+          </a>
+          <p className="font-semibold mt-4">
+            React hook that scrapes public Instagram posts using a user id.
+          </p>
+        </div>
+      </article>
+      <article className="flex flex-col py-10 lg:py-20 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
+        <a
           href="https://movewithmadeline.com"
           className="flex flex-col self-center lg:col-start-2 lg:col-span-2"
         >
