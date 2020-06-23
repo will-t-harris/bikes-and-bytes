@@ -34,13 +34,6 @@ module.exports = {
         component: require.resolve("./src/components/Layout.tsx"),
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
-        ignore: ["prismjs/themes/prism-okaidia.css"],
-      },
-    },
     // Sources
     {
       resolve: `gatsby-source-filesystem`,
