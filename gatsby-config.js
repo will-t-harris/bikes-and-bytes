@@ -1,3 +1,5 @@
+const tailwindConfig = require("./tailwind.config")
+
 require("ts-node").register({ files: true })
 
 module.exports = {
@@ -32,6 +34,13 @@ module.exports = {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve("./src/components/Layout.tsx"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        ignore: ["prismjs/themes/prism-okaidia.css"],
       },
     },
     // Sources
