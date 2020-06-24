@@ -1,3 +1,5 @@
+const tailwindConfig = require("./tailwind.config")
+
 require("ts-node").register({ files: true })
 
 module.exports = {

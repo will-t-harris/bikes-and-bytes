@@ -1,4 +1,5 @@
 /* purgecss start ignore */
+
 @tailwind base;
 
 @tailwind components;
@@ -6,7 +7,12 @@
 .site-linear-gradient {
   @apply border-b-8;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #19d938, #ff0545, #ff7d05);
+  border-image-source: linear-gradient(
+    to left,
+    #ff0545 0%,
+    #ff7d05 50%,
+    #19d938 100%
+  );
 }
 
 /* Header Buttons */
