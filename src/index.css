@@ -621,6 +621,24 @@ video {
   }
 }
 
+.light-mode {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #000;
+  color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+.dark-mode {
+  --bg-opacity: 1;
+  background-color: #333030;
+  background-color: rgba(51, 48, 48, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 .site-linear-gradient {
   border-bottom-width: 8px;
   border-image-slice: 1;

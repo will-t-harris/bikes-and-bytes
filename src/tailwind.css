@@ -4,6 +4,14 @@
 
 @tailwind components;
 
+.light-mode {
+  @apply bg-white text-black;
+}
+
+.dark-mode {
+  @apply bg-bodyBackground text-white;
+}
+
 .site-linear-gradient {
   @apply border-b-8;
   border-image-slice: 1;
