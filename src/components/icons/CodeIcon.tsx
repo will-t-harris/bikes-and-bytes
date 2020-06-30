@@ -6,7 +6,7 @@ interface Props {
 
 const CodeIcon = ({ iconTitle }: Props) => (
   <svg
-    className="fill-current text-blueGray-100 mx-6"
+    className="fill-current mx-6"
     width="64"
     height="64"
     fill="none"

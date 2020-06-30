@@ -6,7 +6,7 @@ interface Props {
 
 const BikeIcon = ({ iconTitle }: Props) => (
   <svg
-    className="fill-current text-blueGray-100 bg-navBackground ml-6"
+    className="fill-current ml-6"
     width="96"
     height="64"
     viewBox="0 0 96 55"
