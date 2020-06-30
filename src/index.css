@@ -659,9 +659,6 @@ video {
   margin-left: auto;
   margin-right: auto;
   font-size: 1.5rem;
-  --text-opacity: 1;
-  color: #d9e2ec;
-  color: rgba(217, 226, 236, var(--text-opacity));
   font-weight: 600;
   justify-content: center;
 }
