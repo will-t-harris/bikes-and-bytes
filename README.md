@@ -10,3 +10,4 @@
 - TailwindCSS
 - PrismJS
 - Jest
+- React Testing Library

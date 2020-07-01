@@ -30,7 +30,7 @@
 
 /* Markdown Blockquotes */
 .markdown blockquote {
-  @apply p-0 p-2 mx-6 bg-bodyBackground mb-4 border-l-4 border-gray-600 italic;
+  @apply p-2 mx-6 bg-bodyBackground mb-4 border-l-4 border-gray-600 italic;
 }
 
 .markdown blockquote > p {
