@@ -4,9 +4,9 @@ title: "React: JSX Basics"
 date: "2020-05-18"
 ---
 
-Over the last year, I've been on a mission to learn modern JavaScript. Much of the language has changed and improved since my initial exposure to it, and I've found no shortage of things to explore. I've also landed on React as my front-end framework of choice and have really been enjoying the experience.
+Over the last year I've been on a mission to learn modern JavaScript. Much of the language has changed and improved since my initial exposure to it, and I've found no shortage of things to explore. I've also landed on React as my front-end framework of choice and have been enjoying working with it immensely.
 
-For some time I've wanted to set down and think through the different basic building blocks of React, so this will be the first of many posts covering React fundamentals as I understand them.
+For some time I've wanted to sit down and think through the different basic building blocks of React, so this will be the first of a series of posts covering React fundamentals as I understand them.
 
 Today let's talk about JSX.
 
@@ -14,7 +14,7 @@ Today let's talk about JSX.
 
 JSX is React's syntax extension to regular JavaScript. React has embraced the idea that rendering logic should be coupled with other UI logic -- things like how events are handled, how data flows through the application, and how to deal with changes to application state over time.
 
-It is worth noting that JSX is not a requirement for using React: you can do everything without JSX that could be done with JSX. However, many people find JSX to be a very useful tool for working with UI elements inside JavaScript files. It also helps React show more useful error and warning messages.
+It's worth noting that JSX is not a requirement for using React: you can do everything without JSX that could be done with JSX. However, many people find JSX to be a useful tool for working with UI elements inside JavaScript files. It also helps React show more useful error and warning messages.
 
 Let's look at the most basic example of JSX:
 
@@ -22,9 +22,9 @@ Let's look at the most basic example of JSX:
 let greeting = <h1 className="greeting">Hello, world!</h1>
 ```
 
-Clearly, this is not normal HTML or JavaScript! If we run this code in a normal JavaScript file it will immediately throw a `SyntaxError` at the `<` because this isn't valid JavaScript!
+If we run this code in a normal JavaScript file it will immediately throw a `SyntaxError` at the `<` because this isn't valid JavaScript.
 
-Under the hood, the JSX gets 'translated' into regular JavaScript at runtime with a tool called [Babel](https://babeljs.io/docs/en/).
+We're able to mix what looks like HTML syntax with JavaScript because under the hood it gets 'translated' into regular JavaScript at runtime with a tool called [Babel](https://babeljs.io/docs/en/).
 
 > An explanation of Babel is beyond the scope of this post, but their documentation is excellent if you'd like to learn more!
 
@@ -38,11 +38,11 @@ let greeting = React.createElement(
 )
 ```
 
-Note that because React does all the heavy lifting of turning our JSX into `React.createElement` calls, React must always be in scope from our JSX code.
+Note that because React does all the heavy lifting of turning our JSX into `React.createElement` calls, React must always be in scope in our JSX files.
 
 ## Embed Expressions with JSX
 
-Because JSX is ultimately just JavaScript at the end of the day, we can use any valid JavaScript expression inside curly braces in our JSX.
+Because JSX is ultimately just JavaScript, we can use any valid JavaScript expression inside curly braces in our JSX.
 
 It can be helpful to think of curly braces in JSX as indicating to React that we are stepping out of HTML-land and into JavaScript-land, allowing us to write any JavaScript code we want inside those braces.
 
@@ -51,12 +51,12 @@ Imagine that we have an element of an application that displays a random number 
 ```jsx
 let randomNumber = Math.floor(Math.random() * 100)
 
-<p>Your random number is: {randomNumber}</p>
+;<p>Your random number is: {randomNumber}</p>
 ```
 
-We can wrap any JavaScript expression in curly braces inline in our JSX and it will be translated into whatever value the expression evaluates to at runtime.
+We can wrap JavaScript expressions in curly braces inline in our JSX and they will be translated into whatever value the expressions evaluate to at runtime.
 
-After compilation, JSX is translated into normal JavaScript function calls which evaluate to JavaScript objects. This means that we can use JSX statements anywhere that we normally use JavaScript statements (if/else statements, switch statements, loops, variables, etc).
+After compilation, JSX is translated into normal JavaScript function calls which evaluate to JavaScript objects.
 
 ```jsx
 let randomNumber = Math.floor(Math.random() * 100)
@@ -79,7 +79,7 @@ We can also use JSX to set HTML attributes, allowing us to use dynamic values as
 let element = <img src={userImage} />
 ```
 
-> Because this element doesn't have any _children_, we can self-close the tag as we can in an XML document
+> Because this element doesn't have any _children_, we can self-close the tag like we can in an XML document
 
 In practice, when we use this `element`, we can render different images depending on the `useImage` value passed into the `src` attribute. This allows us to _reuse the same element with different values_, providing flexibility and reusability in our code. The `useImage` value could come from anywhere in our application -- an HTTP request, user input, etc. Our JSX is the same, it is only concerned with rendering the final value.
 
@@ -91,7 +91,7 @@ JSX tags can also contain children, just like HTML elements:
 let element = (
   <div>
     <h1>This is a nested heading!</h1>
-    <p>We can nest as many children as we want!</p>
+    <p>We can nest as many children as needed!</p>
     <div>
       <ul>
         <li>Turtles</li>
@@ -105,10 +105,10 @@ let element = (
 )
 ```
 
-> We wrap this JSX in parentheses to avoid issues with [automatic semicolon insertion (ASI)](https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi)
+> We wrap this JSX in parentheses to avoid issues with [automatic semicolon insertion (ASI)](https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi))
 
-We can also use JavaScript anywhere in this hierarchy of children, just like with any other JSX element. Again, this unlocks some really powerful stuff in practice!
+We can also use JavaScript anywhere in this hierarchy of children, just like with any other JSX element.
 
-<hr>
+---
 
-That wraps up our brief look at what JSX is and how it works. Remember that JSX is really just syntactic sugar on top of normal JavaScript (_React's extension to Javascript_), so while it may feel like magic sometimes, at the end of the day we're still just writing JavaScript!
+That wraps up our brief look at what JSX is and how it works. Remember that JSX is just syntactic sugar on top of normal JavaScript (_React's extension to Javascript_), so while it may feel like magic sometimes, at the end of the day we're still just writing JavaScript.
